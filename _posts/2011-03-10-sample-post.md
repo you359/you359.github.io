@@ -7,7 +7,7 @@ tags: [sample post]
 image:
   feature: abstract-3.jpg
   credit: test
-  creditlink:
+  creditlink: test
 ---
 
 Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
