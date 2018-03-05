@@ -6,7 +6,7 @@ modified: 2014-12-24
 tags: [sample post]
 image:
   feature: abstract-3.jpg
-  credit:
+  credit: test
   creditlink:
 ---
 
