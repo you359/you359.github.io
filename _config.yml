@@ -5,14 +5,14 @@ reading_time:     true
 words_per_minute: 200
 # Your site's domain goes here (eg: https://mmistakes.github.io, http://yourdomain.com, etc)
 # When testing locally leave blank or use http://localhost:4000
-# url: https://you359.github.io
-url:
+url: https://you359.github.io
+# url:
 
 # Owner/author information
 owner:
   name:           YoungJin Kim
   avatar:         avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good sentence or two should suffice."
+  bio:            "I'm a Machine Learning guy and interested in all about things related with computer science."
   email:          kimyou35971@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   # twitter:
