@@ -1,0 +1,312 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
+
+  {% if site.owner.twitter %}<!-- Twitter Cards -->
+  {% if page.image.feature %}<meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{{ site.url }}/images/{{ page.image.feature }}">
+  {% else %}<meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="{% if page.image.thumb %}{{ site.url }}/images/{{ page.image.thumb }}{% else %}{{ site.url }}/images/{{ site.logo }}{% endif %}">{% endif %}
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:creator" content="@{{ site.owner.twitter }}">{% endif %}
+
+  <!-- Open Graph -->
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+
+  {% if site.google_verify %}<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
+  {% if site.bing_verify %}<meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
+
+  {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
+  <link rel="canonical" href="{{ canonical }}">
+  <link href="{{ site.url }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- For home(index) page -->
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/home.css">
+
+  <!-- Webfonts -->
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+  <meta http-equiv="cleartype" content="on">
+
+  <!-- Load Modernizr -->
+  <script src="{{ site.url }}/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+  <!--[if lte IE 8]>
+  <script src="assets/home/js/ie/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" href="assets/home/css/main.css" />
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="assets/home/css/ie8.css"/><![endif]-->
+  <!--[if lte IE 9]>
+  <link rel="stylesheet" href="assets/home/css/ie9.css"/><![endif]-->
+</head>
+
+<body class="index">
+
+{% include browser-upgrade.html %}
+{% include navigation.html %}
+
+<div id="page-wrapper">
+
+  <!-- Header -->
+  <header id="header" class="alt">
+    <!--<h1 id="logo"><a href="index.html">Ground Truth <span>by HTML5 UP</span></a></h1>-->
+    <nav id="nav">
+      <ul>
+        <li class="current"><a href="index.html">Welcome</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section id="banner">
+
+    <!--
+        ".inner" is set up as an inline-block so it automatically expands
+        in both directions to fit whatever's inside it. This means it won't
+        automatically wrap lines, so be sure to use line breaks where
+        appropriate (<br />).
+    -->
+    <div class="inner">
+
+      <header>
+        <h2>Ground Truth</h2>
+      </header>
+      <p>This is <strong>Twenty</strong>, a free
+        <br />
+        responsive template
+        <br />
+        by <a href="http://html5up.net">HTML5 UP</a>.</p>
+      <footer>
+        <ul class="buttons vertical">
+          <li><a href="#main" class="button fit scrolly">Tell Me More</a></li>
+        </ul>
+      </footer>
+
+    </div>
+
+  </section>
+
+  <!-- Main -->
+  <article id="main">
+
+    <header class="special container">
+      <span class="icon fa-bar-chart-o"></span>
+      <h2>As this is my <strong>twentieth</strong> freebie for HTML5 UP
+        <br />
+        I decided to give it a really creative name.</h2>
+      <p>Turns out <strong>Twenty</strong> was the best I could come up with. Anyway, lame name aside,
+        <br />
+        it's minimally designed, fully responsive, built on HTML5/CSS3/<strong>skel</strong>,
+        and, like all my stuff,
+        <br />
+        released for free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0</a> license. Have fun!</p>
+    </header>
+
+    <!-- One -->
+    <section class="wrapper style2 container special-alt">
+      <div class="row 50%">
+        <div class="8u 12u(narrower)">
+
+          <header>
+            <h2>Behold the <strong>icons</strong> that visualize what you’re all about. or just take up space. your call bro.</h2>
+          </header>
+          <p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu comteger ut fermentum lorem. Lorem ipsum dolor sit amet. Sed tristique purus vitae volutpat ultrices. eu elit eget commodo. Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo.</p>
+          <footer>
+            <ul class="buttons">
+              <li><a href="#" class="button">Find Out More</a></li>
+            </ul>
+          </footer>
+
+        </div>
+        <div class="4u 12u(narrower) important(narrower)">
+
+          <ul class="featured-icons">
+            <li><span class="icon fa-clock-o"><span class="label">Feature 1</span></span></li>
+            <li><span class="icon fa-volume-up"><span class="label">Feature 2</span></span></li>
+            <li><span class="icon fa-laptop"><span class="label">Feature 3</span></span></li>
+            <li><span class="icon fa-inbox"><span class="label">Feature 4</span></span></li>
+            <li><span class="icon fa-lock"><span class="label">Feature 5</span></span></li>
+            <li><span class="icon fa-cog"><span class="label">Feature 6</span></span></li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Two -->
+    <section class="wrapper style1 container special">
+      <div class="row">
+        <div class="4u 12u(narrower)">
+
+          <section>
+            <span class="icon featured fa-check"></span>
+            <header>
+              <h3>This is Something</h3>
+            </header>
+            <p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+          </section>
+
+        </div>
+        <div class="4u 12u(narrower)">
+
+          <section>
+            <span class="icon featured fa-check"></span>
+            <header>
+              <h3>Also Something</h3>
+            </header>
+            <p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+          </section>
+
+        </div>
+        <div class="4u 12u(narrower)">
+
+          <section>
+            <span class="icon featured fa-check"></span>
+            <header>
+              <h3>Probably Something</h3>
+            </header>
+            <p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+          </section>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Three -->
+    <section class="wrapper style3 container special">
+
+      <header class="major">
+        <h2>Next look at this <strong>cool stuff</strong></h2>
+      </header>
+
+      <div class="row">
+        <div class="6u 12u(narrower)">
+
+          <section>
+            <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+            <header>
+              <h3>A Really Fast Train</h3>
+            </header>
+            <p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+          </section>
+
+        </div>
+        <div class="6u 12u(narrower)">
+
+          <section>
+            <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+            <header>
+              <h3>An Airport Terminal</h3>
+            </header>
+            <p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+          </section>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="6u 12u(narrower)">
+
+          <section>
+            <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+            <header>
+              <h3>Hyperspace Travel</h3>
+            </header>
+            <p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+          </section>
+
+        </div>
+        <div class="6u 12u(narrower)">
+
+          <section>
+            <a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+            <header>
+              <h3>And Another Train</h3>
+            </header>
+            <p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+          </section>
+
+        </div>
+      </div>
+
+      <footer class="major">
+        <ul class="buttons">
+          <li><a href="#" class="button">See More</a></li>
+        </ul>
+      </footer>
+
+    </section>
+
+  </article>
+
+  <!-- CTA -->
+  <section id="cta">
+
+    <header>
+      <h2>Ready to do <strong>something</strong>?</h2>
+      <p>Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.</p>
+    </header>
+    <footer>
+      <ul class="buttons">
+        <li><a href="#" class="button special">Take My Money</a></li>
+        <li><a href="#" class="button">LOL Wut</a></li>
+      </ul>
+    </footer>
+
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+
+    <ul class="icons">
+      <li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+      <li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+      <li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
+      <li><a href="#" class="icon circle fa-github"><span class="label">Github</span></a></li>
+      <li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>
+    </ul>
+
+    <ul class="copyright">
+      <li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    </ul>
+
+  </footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/home/js/jquery.min.js"></script>
+<script src="assets/home/js/jquery.dropotron.min.js"></script>
+<script src="assets/home/js/jquery.scrolly.min.js"></script>
+<script src="assets/home/js/jquery.scrollgress.min.js"></script>
+<script src="assets/home/js/skel.min.js"></script>
+<script src="assets/home/js/util.js"></script>
+<!--[if lte IE 8]>
+<script src="assets/home/js/ie/respond.min.js"></script><![endif]-->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    {% include footer.html %}
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+{% include scripts.html %}
+
+</body>
+</html>
