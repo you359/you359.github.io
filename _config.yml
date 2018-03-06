@@ -54,15 +54,15 @@ sass:
 permalink:   /:categories/:title/
 
 # Amount of post to show on home page
-# paginate: 5
-# paginate_path: "/blog/page:num/"
-paginate_multiple:
-  - paginate: 5
-    paginate_path: '/page:num/'
-    sub_dir: '/'
-  - paginate: 5
-    paginate_path: '/blog/page:num/'
-    sub_dir: '/'
+paginate: 5
+paginate_path: "/blog/page:num/"
+#paginate_multiple:
+#  - paginate: 5
+#    paginate_path: '/page:num/'
+#    sub_dir: '/'
+#  - paginate: 5
+#    paginate_path: '/blog/page:num/'
+#    sub_dir: '/'
 
 kramdown:
   input: GFM
