@@ -15,7 +15,7 @@ owner:
   bio:            "I'm a Machine Learning guy and interested in all about things related with computer science."
   email:          kimyou35971@gmail.com
   # Social networking links used in footer. Update and remove as you like.
-  # twitter:
+  twitter:        you359
   facebook:       you359
   github:         you359
   # stackexchange:
@@ -24,7 +24,7 @@ owner:
   # flickr:
   # tumblr:
   # google plus id, include the '+', eg +mmistakes
-  google_plus:
+  google_plus: u/0/101663877903991570004
 
 # Background image to be tiled on all pages
 background:
