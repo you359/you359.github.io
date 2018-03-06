@@ -5,7 +5,7 @@ image:
   feature: music-heart.jpg
   credit:
   creditlink:
-comments: false
+comments: true
 modified: 2018-03-06
 ---
 
