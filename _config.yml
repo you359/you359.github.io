@@ -5,8 +5,8 @@ reading_time:     true
 words_per_minute: 200
 # Your site's domain goes here (eg: https://mmistakes.github.io, http://yourdomain.com, etc)
 # When testing locally leave blank or use http://localhost:4000
-url: https://you359.github.io
-# url:
+# url: https://you359.github.io
+url:
 
 # Owner/author information
 owner:
@@ -54,15 +54,15 @@ sass:
 permalink:   /:categories/:title/
 
 # Amount of post to show on home page
-paginate: 5
-paginate_path: "/blog/page:num/"
-#paginate_multiple:
-#  - paginate: 5
-#    paginate_path: '/page:num/'
-#    sub_dir: '/'
-#  - paginate: 5
-#    paginate_path: '/blog/page:num/'
-#    sub_dir: '/'
+# paginate: 5
+# paginate_path: "/blog/page:num/"
+paginate_multiple:
+  - paginate: 5
+    paginate_path: '/page:num/'
+    sub_dir: '/'
+  - paginate: 5
+    paginate_path: '/blog/page:num/'
+    sub_dir: '/'
 
 kramdown:
   input: GFM
