@@ -193,61 +193,85 @@
     <section class="wrapper style3 container special">
 
       <header class="major">
-        <h2>Next look at this <strong>cool stuff</strong></h2>
+        <h2>Next look at this <strong>Latest Posts</strong></h2>
       </header>
 
       <div class="row">
+        {% assign i = 0 %}
+        {% for post in site.posts %}
+        {% if post.image.feature %}
         <div class="6u 12u(narrower)">
 
           <section>
-            <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+            <a href="{{ site.url }}{{ post.url }}" class="image featured">
+              <div style="position: relative; width: 100%; padding-top: 44.12%; overflow: hidden">
+                <img style="position: absolute; left: 50%; top: 50%; width: 100%; width: auto; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); border-bottom: none;" src="{{ site.url }}/images/{{ post.image.feature }}" alt="{{ post.title }}" />
+              </div>
+            </a>
             <header>
-              <h3>A Really Fast Train</h3>
+              <h3>{{ post.title }}</h3>
             </header>
-            <p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+            <p>{{ post.description }}</p>
           </section>
 
         </div>
-        <div class="6u 12u(narrower)">
+          {% assign i = i | plus: 1 %}
+        {% endif %}
+        {% if i > 3 %}
+          {% break %}
+        {% endif %}
+        {% endfor %}
+        <!--<div class="6u 12u(narrower)">-->
 
-          <section>
-            <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-            <header>
-              <h3>An Airport Terminal</h3>
-            </header>
-            <p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-          </section>
+          <!--<section>-->
+            <!--<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>-->
+            <!--<header>-->
+              <!--<h3>A Really Fast Train</h3>-->
+            <!--</header>-->
+            <!--<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>-->
+          <!--</section>-->
 
-        </div>
-      </div>
-      <div class="row">
-        <div class="6u 12u(narrower)">
+        <!--</div>-->
+        <!--<div class="6u 12u(narrower)">-->
 
-          <section>
-            <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-            <header>
-              <h3>Hyperspace Travel</h3>
-            </header>
-            <p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-          </section>
+          <!--<section>-->
+            <!--<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>-->
+            <!--<header>-->
+              <!--<h3>An Airport Terminal</h3>-->
+            <!--</header>-->
+            <!--<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>-->
+          <!--</section>-->
 
-        </div>
-        <div class="6u 12u(narrower)">
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="row">-->
+        <!--<div class="6u 12u(narrower)">-->
 
-          <section>
-            <a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-            <header>
-              <h3>And Another Train</h3>
-            </header>
-            <p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-          </section>
+          <!--<section>-->
+            <!--<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>-->
+            <!--<header>-->
+              <!--<h3>Hyperspace Travel</h3>-->
+            <!--</header>-->
+            <!--<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>-->
+          <!--</section>-->
 
-        </div>
+        <!--</div>-->
+        <!--<div class="6u 12u(narrower)">-->
+
+          <!--<section>-->
+            <!--<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>-->
+            <!--<header>-->
+              <!--<h3>And Another Train</h3>-->
+            <!--</header>-->
+            <!--<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>-->
+          <!--</section>-->
+
+        <!--</div>-->
       </div>
 
       <footer class="major">
         <ul class="buttons">
-          <li><a href="#" class="button">See More</a></li>
+          <li><a href="{{ site.url }}/blog/" class="button">See More</a></li>
         </ul>
       </footer>
 
@@ -275,11 +299,11 @@
   <footer id="footer">
 
     <ul class="icons">
-      <li><a style="color: #ffffff;" href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
-      <li><a style="color: #ffffff;" href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
-      <li><a style="color: #ffffff;" href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
-      <li><a style="color: #ffffff;" href="#" class="icon circle fa-github"><span class="label">Github</span></a></li>
-      <li><a style="color: #ffffff;" href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>
+      <li><a style="color: #ffffff; border-bottom: none;" href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+      <li><a style="color: #ffffff; border-bottom: none;" href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+      <li><a style="color: #ffffff; border-bottom: none;" href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
+      <li><a style="color: #ffffff; border-bottom: none;" href="#" class="icon circle fa-github"><span class="label">Github</span></a></li>
+      <li><a style="color: #ffffff; border-bottom: none;" href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>
     </ul>
 
     <ul class="copyright">

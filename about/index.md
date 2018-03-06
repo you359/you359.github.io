@@ -2,11 +2,11 @@
 layout: page
 title: About Me
 image:
-  feature: abstract-5.jpg
-  credit: dargadgetz
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
+  feature: music-heart.jpg
+  credit:
+  creditlink:
 comments: false
-modified: 2018-03-05
+modified: 2018-03-06
 ---
 
 They say three times the charm, so here is another free responsive Jekyll blog theme for you. I've learned a ton since open sourcing my first two themes [on Github](http://github.com/mmistakes), and wanted to try a few new things this time around. 
