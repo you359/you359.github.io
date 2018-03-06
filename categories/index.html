@@ -1,0 +1,55 @@
+---
+layout: post-index
+title: All Posts
+description: "An archive of posts."
+comments: false
+---
+
+<!-- Create empty arrays -->
+{% assign categories = '' | split: ',' %}
+{% assign unique_categories = '' | split: ',' %}
+
+<!-- Push to categories -->
+{% for post in site.posts '%}
+{% assign categories = categories | push: post.category %}
+{% endfor %}
+
+<!-- Uniq -->
+{% assign categories = categories | sort %}
+{% for tag in categories %}
+
+<!-- If not equal to previous then it must be unique as sorted -->
+{% unless tag == previous %}
+
+<!-- Push to unique_categories -->
+{% assign unique_categories = unique_categories | push: tag %}
+{% endunless %}
+
+{% assign previous = tag %}
+{% endfor %}
+
+{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign tags_list = site_tags | split:',' | sort %}
+
+<ul class="entry-meta inline-list">
+    {% for item in (0..unique_categories.size) %}{% unless forloop.last %}
+    {% capture this_word %}{{ unique_categories[item] | strip_newlines }}{% endcapture %}
+    {% assign num_post = 0 %}
+    {% for category in categories %}{% if category == this_word %}{% assign num_post = num_post | plus: 1 %}{% endif %}{% endfor %}
+    <li><a href="#{{ this_word }}" class="tag"><span class="term">{{ this_word }}</span> <span class="count">{{ num_post }}</span></a></li>
+    {% endunless %}{% endfor %}
+</ul>
+
+{% for category in unique_categories %}
+    <article>
+        <h2 id="{{ category }}">{{ category }}</h2>
+        <ul>
+
+            {% for post in site.posts %}
+                {% if post.category == category %}
+            <li class="entry-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </article>
+{% endfor %}
