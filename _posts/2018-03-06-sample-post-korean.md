@@ -13,6 +13,23 @@ image:
 
 본 포스트에서는 기본적인 MarkDown Language를 사용한 태마 사용법에 대해서 알아보겠습니다.
 
+다음 코드와 같이 내용 앞에 '#'을 붙이면 해당 내용을 제목(Head Line)으로 표시할 수 있습니다.
+각 #의 개수는 Html 코드의 h1, h2, h3, h4, h5 에 대응됩니다.
+
+``` apiblueprint
+# Heading 1
+
+## Heading 2
+
+### Heading 3
+
+#### Heading 4
+
+##### Heading 5
+
+###### Heading 6
+```
+
 # Heading 1
 
 ## Heading 2
