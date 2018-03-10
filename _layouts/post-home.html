@@ -226,7 +226,7 @@
         <div class="6u 12u(narrower)">
 
           <section>
-            <a href="{{ site.url }}{{ post.url }}" class="image featured">
+            <a href="{{ site.url }}{{ post.url }}" class="image featured" style="border-bottom: none;">
               <div style="position: relative; width: 100%; padding-top: 44.12%; overflow: hidden">
                 {% capture feature_string %}{{ post.image.feature | slice: 0, 4 }}{% endcapture %}
                 {% if feature_string == "http" %}
