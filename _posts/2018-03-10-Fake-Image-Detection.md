@@ -6,7 +6,7 @@ modified: 2018-03-10
 tags: [fake detection, Machine Learning]
 category: Fake Detection
 image:
-  feature:
+  feature: tmp/fake-image.png
   credit:
   creditlink:
 ---
