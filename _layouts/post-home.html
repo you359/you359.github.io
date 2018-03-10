@@ -228,7 +228,13 @@
           <section>
             <a href="{{ site.url }}{{ post.url }}" class="image featured">
               <div style="position: relative; width: 100%; padding-top: 44.12%; overflow: hidden">
+                {% capture feature_string %}{{ post.image.feature | slice: 0, 4 }}{% endcapture %}
+                {% if feature_string == "http" %}
+                <img style="position: absolute; left: 50%; top: 50%; width: 100%; width: auto; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); border-bottom: none;" src="{{ post.image.feature }}" alt="{{ post.title }}" />
+                {% endif %}
+                {% if feature_string != "http" %}
                 <img style="position: absolute; left: 50%; top: 50%; width: 100%; width: auto; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); border-bottom: none;" src="{{ site.url }}/images/{{ post.image.feature }}" alt="{{ post.title }}" />
+                {% endif %}
               </div>
             </a>
             <header>

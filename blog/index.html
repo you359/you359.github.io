@@ -16,7 +16,13 @@ image:
   <header>
     {% if post.image.feature %}
       <div class="entry-image-index">
+        {% capture feature_string %}{{ post.image.feature | slice: 0, 4 }}{% endcapture %}
+        {% if feature_string == "http" %}
+        <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}"><img src="{{ post.image.feature }}" alt="{{ post.title }}"></a>
+        {% endif %}
+        {% if feature_string != "http" %}
         <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}"><img src="{{ site.url }}/images/{{ post.image.feature }}" alt="{{ post.title }}"></a>
+        {% endif %}
       </div><!-- /.entry-image -->
     {% endif %}
     <div class="entry-meta">
