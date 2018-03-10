@@ -44,7 +44,13 @@ image:
 
 ### Body text
 
-Lorem ipsum dolor sit amet, test link adipiscing elit. **This is strong**. Nullam dignissim convallis est. Quisque aliquam.
+다음 코드를 사용하면, 아래와 같이 그림을 추가할 수 있습니다. 아래 링크를 활용하면 깃허브 페이지에 이미지를 쉽게 추가할 수 있다고 합니다.
+[Github 마크다운 작성 시 이미지 업로드 꿀팁](https://ahribori.com/article/5a03bcfd6c9eef13d882e29a)
+
+``` apiblueprint
+![3953273590_704e3899d5_m](https://user-images.githubusercontent.com/14049664/37239363-9b099be8-247d-11e8-8bb2-13376f896844.jpg)
+{: .image-right}
+```
 
 ![3953273590_704e3899d5_m](https://user-images.githubusercontent.com/14049664/37239363-9b099be8-247d-11e8-8bb2-13376f896844.jpg)
 {: .image-right}
@@ -54,6 +60,10 @@ Lorem ipsum dolor sit amet, test link adipiscing elit. **This is strong**. Nulla
 HTML and <abbr title="cascading stylesheets">CSS<abbr> are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.
 
 ### Blockquotes
+
+``` apiblueprint
+> Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.
+```
 
 > Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.
 
