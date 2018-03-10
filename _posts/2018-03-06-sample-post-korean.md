@@ -45,6 +45,7 @@ image:
 ### Body text
 
 다음 코드를 사용하면, 아래와 같이 그림을 추가할 수 있습니다. 아래 링크를 활용하면 깃허브 페이지에 이미지를 쉽게 추가할 수 있다고 합니다.
+
 [Github 마크다운 작성 시 이미지 업로드 꿀팁](https://ahribori.com/article/5a03bcfd6c9eef13d882e29a)
 
 ``` apiblueprint
