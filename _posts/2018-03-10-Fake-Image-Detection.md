@@ -74,6 +74,7 @@ image:
 4. MICC [[*]](http://lci.micc.unifi.it/labd/2015/01/copy-move-forgery-detection-and-localization/)
 
 ... 연구중
+... 연구중
 
 # References
 [[1] Detect if the Image is Photoshop Fake or Not, 2017](https://techwiser.com/detect-image-photoshop-fake/) <br />
