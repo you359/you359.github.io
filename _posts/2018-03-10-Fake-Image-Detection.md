@@ -20,7 +20,7 @@ image:
 합성 사진은 원본 이미지의 일부를 다른 특정 이미지로 자연스럽게 고친것을 의미합니다.
 
 최근, FaceBook, Instagram 등의 SNS와 YouTube 등 여러 멀티미디어 서비스들이 활발하게 사용됨에 따라, 가짜 이미지 혹은 합성사진등이 쉽게 사용자들에게 노출되고 있습니다.
-대부분의 경우 재미를 위해서 원본 이미지를 수정하거나, 가짜 이미지를 공유하는 경우가 많지만, 가짜 이미지나 합성 사진들이 실제 정보들을 왜곡하는 경우도 충분히 발생할 가능성이 있습니다.
+대부분의 경우 재미를 위해서 원본 이미지를 수정하거나, 가짜 이미지를 공유하는 경우가 많지만, 좋지 않은 의도로 가짜 이미지나 합성 사진들을 공유함으로써 실제 정보들을 왜곡하는 경우도 충분히 발생할 가능성이 있습니다.
 
 ## Detecting Fake Face Image
 
@@ -38,16 +38,54 @@ image:
 ### Idea:
 합성 사진을 검출하는 방법에 대한 아이디어는 다음과 같습니다.
 
-* 일반적으로 PhotoShop 등의 프로그램을 사용해서 원본 이미지를 수정할 경우, 이미지의 압축 시 수정된 부분의 압축 결과(압축률?)가 원본 부분과 다르게 발생된다고 합니다.[[1]](https://github.com/afsalashyana/FakeImageDetection)
+**합성사진 검출 시, 유용한 특징들(features)**
+
+1. Look for Signs of Image Compression [[1]](https://techwiser.com/detect-image-photoshop-fake/), [[2]](https://github.com/afsalashyana/FakeImageDetection)
+    * 일반적으로 PhotoShop 등의 프로그램을 사용해서 원본 이미지를 수정할 경우, 이미지의 압축 시 수정된 부분의 압축 결과(압축률?)가 원본 부분과 다르게 발생된다고 합니다.
+2. Check Metadata or Exif Data [[1]](https://techwiser.com/detect-image-photoshop-fake/), [[2]](https://github.com/afsalashyana/FakeImageDetection)
+    * 이미지 파일의 메타데이터(metadata)에는 이미지파일의 크기, Color Space, 압축 방법(Compression), 해상도 뿐만 아니라 출처(카메라 정보)나 수정 소프트웨어(Photoshop)등의 정보가 포함된다.
+        * 따라서 이미지 파일의 메타데이터를 이용하면, 해당 파일의 출처 혹은 수정 정보를 확인할 수 있다.
+        * 그러나, 메타데이터는 소프트웨어를 통해 쉽게 수정이 가능하다.
+3. Look for the Shadow [[1]](https://techwiser.com/detect-image-photoshop-fake/)
+    * 이미지 합성에서 그림자는 자연스럽게 만들기 가장 어려운 부분 중 하나이다.
+        * 따라서, 이미지 내 그림자 영역을 검출하고, 해당 영역이 자연스러운지 여부를 감지하는 것도 고려할 필요가 있다.
+        * 그러나, 일부 이미지에는 그림자가 표시되지 않는 경우도 있다.
+4. Pay Attention to the Image Size [[1]](https://techwiser.com/detect-image-photoshop-fake/)
+    * 일반적으로 합성사진은 원본 이미지보다 용량이 크다.
+        * Photoshop등의 이미지 합성 소프트웨어를 사용해서 합성 사진을 생성할 경우, 새로운 레이어(합성하고자 하는 컨텐츠 등)를 합성하는 과정에서 이미지의 크기가 커짐
+        * 그러나, 이미지 파일의 용량은 쉽게 압축이 가능하다.
+
+### Related Work:
+1. Blind Fake Image detection [[3]](https://www.researchgate.net/publication/260369011_Blind_Fake_Image_detection)
+    * Singular Value Decomposition(SVD, 특이값 분해)를 적용한 Fake Detection
+    * SVD를 이용해서 이미지의 압축에 따른 합성 여부 검출을 꾀한 듯?
+    * Rule Based Algorithm
+2. Fake Colorized Image Detection [[4]](https://arxiv.org/pdf/1801.02768.pdf)
+    * 원본 이미지의 색상 변경에 대한 검출 방법
+3. Fakes, Frauds, and Forgeries: How to Detect Image Manipulation [[5]](https://photography.tutsplus.com/articles/fakes-frauds-and-forgeries-how-to-detect-image-manipulation--cms-22230)
+4. Detecting fake images using watermarks and support vector machines [[6]](https://www.sciencedirect.com/science/article/pii/S0920548907000694)
+5. Fake Image Detection by Illumination Color Classification [[7]](https://pdfs.semanticscholar.org/2736/94fe40f65440ed236b68740d0ea9ae470088.pdf)
+6. Image Forgery Localization Based on Multi-Scale Convolutional Neural Networks [[8]](https://arxiv.org/abs/1706.07842)
+
+### Dataset:
+1. RTD(Realistic Tampered Dataset) [[*]](http://kt.agh.edu.pl/~korus/downloads/dataset-realistic-tampering/)
+2. Multi-Scale Tampering Maps Dataset [[*]](http://kt.agh.edu.pl/~korus/downloads/dataset-multiscale-maps/)
+3. CASIA Tampered Image Detection Evaluation Database [[*]](http://forensics.idealtest.org/)
+4. MICC [[*]](http://lci.micc.unifi.it/labd/2015/01/copy-move-forgery-detection-and-localization/)
 
 ... 연구중
 
 # References
-* Supervised Learning Method
-    * CNN
+[[1] Detect if the Image is Photoshop Fake or Not, 2017](https://techwiser.com/detect-image-photoshop-fake/) <br />
+[[2] Fake Image Detection Using Machine Learning, 2017](https://github.com/afsalashyana/FakeImageDetection) <br />
+[[3] Blind Fake Image detection, 2013](https://www.researchgate.net/publication/260369011_Blind_Fake_Image_detection) <br />
+[[4] Fake Colorized Image Detection, 2018](https://arxiv.org/pdf/1801.02768.pdf) <br />
+[[5] Fakes, Frauds, and Forgeries: How to Detect Image Manipulation, 2015](https://photography.tutsplus.com/articles/fakes-frauds-and-forgeries-how-to-detect-image-manipulation--cms-22230) <br />
+[[6] Detecting fake images using watermarks and support vector machines, 2008](https://www.sciencedirect.com/science/article/pii/S0920548907000694) <br />
+[[7] Fake Image Detection by Illumination Color Classification, 2015](https://pdfs.semanticscholar.org/2736/94fe40f65440ed236b68740d0ea9ae470088.pdf) <br />
+[[8] Image Forgery Localization Based on Multi-Scale Convolutional Neural Networks, 2018](https://arxiv.org/abs/1706.07842) <br />
 
-* Unsupervised Learning Method
-    * AutoEncoder
-    * Anomaly GAN
-
-[[1] Fake Image Detection Using Machine Learning](https://github.com/afsalashyana/FakeImageDetection)
+[[ * ] RTD(Realistic Tampered Dataset)](http://kt.agh.edu.pl/~korus/downloads/dataset-realistic-tampering/) <br />
+[[ * ] Multi-Scale Tampering Maps Dataset](http://kt.agh.edu.pl/~korus/downloads/dataset-multiscale-maps/) <br />
+[[ * ] CASIA Tampered Image Detection Evaluation Database](http://forensics.idealtest.org/) <br />
+[[ * ] MICC](http://lci.micc.unifi.it/labd/2015/01/copy-move-forgery-detection-and-localization/) <br />
