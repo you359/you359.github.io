@@ -24,7 +24,10 @@ image:
 
 ## Sound DataSets
 
+1. [Urban Sound Datasets](https://serv.cusp.nyu.edu/projects/urbansounddataset/)
+    * UrbanSound8K는 10가지 종류의 소리를 약 4초 정도 녹음한 wav파일임
 
 ## Video DataSets
 
-
+1. [YouTube-8M Datasets](https://research.google.com/youtube8m/)
+    * YouTube의 약 8백만개의 동영상 관련 데이터셋
