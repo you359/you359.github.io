@@ -14,7 +14,7 @@ image:
 {% assign unique_categories = '' | split: ',' %}
 
 <!-- Push to categories -->
-{% for post in site.posts '%}
+{% for post in site.posts %}
 {% assign categories = categories | push: post.category %}
 {% endfor %}
 
