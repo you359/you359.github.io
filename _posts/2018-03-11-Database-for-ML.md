@@ -2,7 +2,7 @@
 layout: post
 title: Database for Machine Learning
 description: "this post contain database about Images, Sounds ,Videos and so on for Machine Learning!"
-modified: 2018-03-10
+modified: 2018-03-13
 tags: [Database, Datasets Machine Learning]
 category: Fake Detection
 image:
@@ -17,10 +17,10 @@ image:
 
 ## Image DataSets
 
-1. [CVonline: Image Databases](http://homepages.inf.ed.ac.uk/rbf/CVonline/Imagedbase.htm)
-    * 이미지와 관련된 여러가지 데이터베이스를 정리해놓은 사이트
-    * Action, 자율주행, 얼굴, 지문 등 25가지 카테고리로 분류되어 있음
-    * image외에 일부 사운드 및 동영상 데이터도 정리되고 있음
+1. [ImageNet](http://www.image-net.org/)
+    * 대표적인 이미지 데이터셋
+    * ILSVRC 에서는 ImageNet의 1000개 클래스로 구성된 데이터셋을 이용해서 Classification, Localization, Segmentation 등을 수행함
+
 
 ## Sound DataSets
 
@@ -31,3 +31,13 @@ image:
 
 1. [YouTube-8M Datasets](https://research.google.com/youtube8m/)
     * YouTube의 약 8백만개의 동영상 관련 데이터셋
+
+## Site for DataSets
+
+1. [CVonline: Image Databases](http://homepages.inf.ed.ac.uk/rbf/CVonline/Imagedbase.htm)
+    * 이미지와 관련된 여러가지 데이터베이스를 정리해놓은 사이트
+    * Action, 자율주행, 얼굴, 지문 등 25가지 카테고리로 분류되어 있음
+    * image외에 일부 사운드 및 동영상 데이터도 정리되고 있음
+
+2. [Open Data for Deep Learning](https://deeplearning4j.org/opendata)
+    * 이미지, 얼굴, 비디오, 텍스트, 추천시스템, 음성 등의 카테고리로 분류된 데이터셋을 정리해놓은 사이트
