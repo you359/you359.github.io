@@ -128,3 +128,22 @@ Make any link standout more when applying the `.btn` class.
 <div markdown="0"><a href="#" class="btn btn-warning">Warning Button</a></div>
 <div markdown="0"><a href="#" class="btn btn-danger">Danger Button</a></div>
 <div markdown="0"><a href="#" class="btn btn-info">Info Button</a></div>
+
+## Latex
+
+$$
+\begin{align*}
+  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
+  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+      \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
+      \vdots & \ddots & \vdots \\
+      \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
+    \end{array} \right)
+  \left( \begin{array}{c}
+      y_1 \\
+      \vdots \\
+      y_n
+    \end{array} \right)
+\end{align*}
+$$
