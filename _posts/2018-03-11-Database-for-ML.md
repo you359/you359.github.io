@@ -4,7 +4,7 @@ title: Database for Machine Learning
 description: "this post contain database about Images, Sounds ,Videos and so on for Machine Learning!"
 modified: 2018-03-13
 tags: [Database, Datasets Machine Learning]
-category: Fake Detection
+category: DataSets
 image:
   feature: posts/database.jpg
   credit:
