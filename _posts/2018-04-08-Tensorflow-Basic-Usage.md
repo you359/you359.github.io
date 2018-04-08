@@ -4,7 +4,7 @@ title: Basic use of Tensorflow
 description: "in this post, i will write the research strategy for Fake(forgery) image detection"
 modified: 2018-03-26
 tags: [Tensorflow, Machine Learning]
-category: Fake Detection
+category: Tensorflow Basic
 image:
   feature: posts/tensorflow_bg.jpg
   credit: tensorflow
