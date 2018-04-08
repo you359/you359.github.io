@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tensorflow 기본 활용
+title: Basic use of Tensorflow
 description: "in this post, i will write the research strategy for Fake(forgery) image detection"
 modified: 2018-03-26
 tags: [Tensorflow, Machine Learning]
