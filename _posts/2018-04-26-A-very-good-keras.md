@@ -177,5 +177,5 @@ classifier.layers[0].set_weights(weight_param)
 
 <br />
 <br />
-ps. 이제까지 정말 Tensorflow로 삽질 많이 한것 같은데,,, 이제 keras 써서 겁나 편하게 코딩해야겠다.
+ps. 이제까지 정말 Tensorflow로 삽질 많이 한것 같은데,,, 이제 keras 써서 겁나 편하게 코딩해야겠다. <br />
 ps. 블로그 포스트 말투가 오락가락하네요.. 블로그 시작한지 얼마 안되서 글 쓰는 형식이 안갖춰져서 끙,, 조만간 갖춰지겠죠?ㅋ
