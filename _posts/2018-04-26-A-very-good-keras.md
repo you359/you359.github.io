@@ -6,7 +6,7 @@ modified: 2018-03-26
 tags: [Keras, Tensorflow, Machine Learning]
 category: Tensorflow Basic
 image:
-  feature: posts/tensorflow_bg.jpg
+  feature: posts/keras.jpg
   credit: tensorflow
   creditlink:
 ---
