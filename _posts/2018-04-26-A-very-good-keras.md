@@ -175,6 +175,54 @@ classifier.layers[0].set_weights(weight_param)
 
 당연히 여기서 weight_param의 shape는 layers[0]의 shape와 동일해야 하며, numpy array를 넘겨주면 된다.
 
+### Model Saving
+keras에서 model 학습 중, validation accuracy가 좋아질 때마다 모델을 저장하는 코드는 다음과 같다.
+
+```python
+from keras.callbacks import ModelCheckpoint
+
+filepath="checkpoint/weights-improvement-{epoch:02d}-{val_acc:.2f}.hdf5"
+checkpoint = ModelCheckpoint(filepath, monitor='val_acc', verbose=1, save_best_only=True, mode='max')
+callbacks_list = [checkpoint]
+
+classifier.fit_generator(train_generator,
+                         steps_per_epoch=100000,
+                         epochs=100,
+                         validation_data=validation_generator,
+                         validation_steps=2000,
+                         callbacks=callbacks_list)
+```
+위 코드와 같이 keras.callbacks 모듈의 ModelCheckpoint를 import한후, save file path를 정의한 후 ModelCheckpoint 인스턴스를 생성한 뒤, model의 fit()함수나 fit_generator함수의 callbacks함수로 넘겨준다.
+이렇게 설정해놓으면 keras가 자동으로 epochs마다 validation accuracy가 이전보다 좋아질 때마다 모델을 저장한다.
+
+### freeze layer
+경우에 따라서, 모델 학습 시 일부 layer의 parameter를 update하지 않고 싶은 경우가 있다. 이런 경우 layer 인스턴스 파라미터의 trainable을 False로 두면 된다. 관련 코드는 다음과 같다.
+
+```python
+frozen_layer = Dense(32, trainable=False)
+```
+
+example:
+```python
+x = Input(shape=(32,))
+layer = Dense(32)
+layer.trainable = False
+y = layer(x)
+
+frozen_model = Model(x, y)
+# in the model below, the weights of `layer` will not be updated during training
+frozen_model.compile(optimizer='rmsprop', loss='mse')
+
+layer.trainable = True
+trainable_model = Model(x, y)
+# with this model the weights of the layer will be updated during training
+# (which will also affect the above model since it uses the same layer instance)
+trainable_model.compile(optimizer='rmsprop', loss='mse')
+
+frozen_model.fit(data, labels)  # this does NOT update the weights of `layer`
+trainable_model.fit(data, labels)  # this updates the weights of `layer`
+```
+
 <br />
 <br />
 ps. 이제까지 정말 Tensorflow로 삽질 많이 한것 같은데,,, 이제 keras 써서 겁나 편하게 코딩해야겠다. <br />
