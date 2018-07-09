@@ -12,6 +12,9 @@ image:
 ---
 
 이 포스트에서는 다음과 같은 CNN Model 들과, 각 Model 에서 도입한 주요 컨셉들에 대해 살펴보겠습니다.
+
+* 본 포스트의 내용은 coursera와 같은 온라인 강의와 다양한 블로그들을 통해 학습한 내용을 바탕으로 이해한 내용을 정리했기 때문에, 다소 부정확할 수도 있습니다. 조만간 관련 논문들을 읽고 좀더 디테일하게 정리할 예정입니다.
+
 ### 전통적인 CNN 모델
 1. LeNet
 2. AlexNet
@@ -32,7 +35,7 @@ image:
 
 ## GoogLeNet(Inception)
 
-먼저 GoogLeNet(Inception) 모델에 대해 살펴보기 전에, 먼저 1x1 Convolution 연산의 개념과 Network In Network 라는 모델 디자인적 컨셉에 대해 알아봅시다.
+먼저 GoogLeNet(Inception) 모델에 대해 살펴보기 전에, 먼저 1x1 Convolution 연산의 개념과 Network In Network 라는 컨셉에 대해 알아봅시다.
 
 1x1 Convolution 연산은 말 그대로, Convolution filter 의 크기가 1x1 이라는 것을 의미하며 다음 그림과 같이 표현될 수 있습니다.
 
@@ -90,11 +93,38 @@ image:
 
 만약 CNN 모델을 디자인하고자 한다면 Convolutional Layer의 filter 크기를 1x3으로 할지, 3x3으로 할지, 5x5로 할지, 어느 시점에 어떤 크기의 pooling layer를 적용할지를 고민해야 합니다.
 
-여기서 GoogLeNet(inception) 모델이 시도한 것은, "이것들 전부를 적용하자!" 입니다.
+여기서 GoogLeNet(inception) 모델이 시도한 것은, "이것들 전부를 적용하자!" 입니다. 다음 그림은 이러한 개념을 적용한 GoogLeNet(inception) 의 inception 모듈을 개략적으로 도식화한 것입니다.
 
+<figure>
+	<img src="/images/contents/inception_1.jpg" alt="">
+	<figcaption>inception 개념</figcaption>
+</figure>
 
+당연히 이러한 개념은 하나의 입력에 대해 다양한 크기의 filter 를 갖는 convolution 연산을 취함에 따라, 학습이 필요한 파라미터수가 크게 증가해서 연산량이 많아지는 문제가 발생합니다.
+이때, 1x1 Convolution 연산을 적용해서, 먼저 입력 차원을 줄인 후, 3x3, 5x5 Convolution 연산을 수행하면 연산량을 효과적으로 줄일 수 있습니다.
+다음 그림은 실제 GoogLeNet(inception)에서 사용한 inception module 을 도식화 한 것입니다.
+
+<figure>
+	<img src="/images/contents/inception_module.jpg" alt="">
+	<figcaption>1x1 Convolution 을 적용한 실제 inception module</figcaption>
+</figure>
+
+그림에서 보이는 것과 같이, 3x3, 5x5 Convolution 연산의 연산량을 줄이기 위해, 바로 전에 1x1 Conovolution 연산을 적용하여 입력 차원을 줄이고, 3x3, 5x5 Convolution 을 수행하는 것을 확인할 수 있습니다.
+Max Pooling 의 경우 순서가 다른데, Pooling 연산의 경우, Channel 의 크기를 변경시키지 않기 때문에, Pooling 연산을 수행한 후, 1x1 Convolution 연산을 통해 Channel(Depth) 를 맞춰주는 역할을 합니다.
+
+이러게 정의된 inception module 들을 이어붙인것이 GoogLeNet(inception) 이며, 도식은 다음과 그림과 같습니다.
+
+<figure>
+	<img src="/images/contents/googlenet_model.JPG" alt="">
+	<figcaption>1x1 Convolution 을 적용한 실제 inception module</figcaption>
+</figure>
+
+최근에는 inception_v2, inception_v3, inception_v4, inception과 resnet을 결합한 inception_resnet 등등 inception module을 기반으로 한 다양한 모델이 연구되었는데,
+조만간 공부해서 정리해보겠습니다~
 
 ## ResNet
+
+ResNet 에서 도입한 가장 중요한 키 컨셉은 Skip Connection(short cut) 입니다.
 
 ## DenseNet
 
