@@ -125,6 +125,38 @@ Max Pooling 의 경우 순서가 다른데, Pooling 연산의 경우, Channel �
 ## ResNet
 
 ResNet 에서 도입한 가장 중요한 키 컨셉은 Skip Connection(short cut) 입니다.
+기존의 CNN을 포함한 모든 Neural Network 는 네트워크가 깊어지면(히든 레이어가 많아지면) 학습 시 gradient 가 매우 작아지거나 커지는 vanishing/exploiting gradient 문제가 발생합니다.
+ResNet 에서는 이러한 문제를 해결하기위해 Skip Connection(short cut) 이라는 개념을 도입했는데, 한번 살펴봅시다.
+
+먼저 Skip Connection(short cut) 이란, 몇 단계 이전 레이어에서의 출력을 현재 레이어의 출력(activation 이전)에 더하는 것을 의미합니다. 간단하게 도식화하면 다음 그림과 같이 표현할 수 있습니다.
+
+<figure>
+	<img style='text-align=center' src="/images/contents/skipconnection.JPG" alt="">
+	<figcaption>1x1 Convolution 을 적용한 실제 inception module</figcaption>
+</figure>
+
+여기서 주목할만한 점은, 이러한 Skip Connection(short cut) 이 항등 함수를 학습하기 쉽게 만들어준다는 점입니다.
+예를들어, 일반적인 Neural Network 의 $$ l+2 $$ 번째에 레이어에 대한 activation 결과를 수식으로 표현하면 다음과 같이 표현됩니다.
+
+$$
+    a^{[l+2]} = g(z^{[l+2]}) \\
+    a^{[l+2]} = g(w^{[l+2]}a^{[l+1]} + b^{[l+2]})
+$$
+
+이제, Skip Connection(short cut) 을 적용해봅시다.
+
+$$
+    a^{[l+2]} = g(z^{[l+2]} + a^{[l]}) \\
+    a^{[l+2]} = g(w^{[l+2]}a^{[l+1]} + b^{[l+2]} + a^{[l]})
+$$
+
+이렇게 Skip Connection(short cut) 이 적용된 수식에서, 현재 레이어($$l+2$$) 의 weight와 bias가 0이 된다고 가정해보면, 다음과 같은 항등 함수 형태로 표현될 수 있습니다.
+
+$$
+    a^{[l+2]} = g(a^{[l]})
+$$
+
+그 결과, 네트워크의 깊이가 깊어져도, gradient 를 최대한 유지하면서 학습시킬 수 있게 되는것 같습니다.(아직 논문을 보고 확신한게 아니라서,...)
 
 ## DenseNet
 
