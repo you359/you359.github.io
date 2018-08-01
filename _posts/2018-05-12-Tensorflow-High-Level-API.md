@@ -4,7 +4,7 @@ title: Tensorflow High Level API - Estimator
 description: "in this post, i will write about Estimator that is High Level API in Tensorflow"
 modified: 2018-03-26
 tags: [Estimators, Tensorflow, Machine Learning]
-category: Tensorflow Basic
+category: Tensorflow Practice
 image:
   feature: posts/tensorflow_bg.jpg
   credit: tensorflow

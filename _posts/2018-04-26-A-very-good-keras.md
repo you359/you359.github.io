@@ -4,7 +4,7 @@ title: A Very Good Keras!!
 description: "in this post, i consider about keras. keras is very useful Library using TF"
 modified: 2018-03-26
 tags: [Keras, Tensorflow, Machine Learning]
-category: Tensorflow Basic
+category: Keras Practice
 image:
   feature: posts/Keras_Logo.jpg
   credit: tensorflow
