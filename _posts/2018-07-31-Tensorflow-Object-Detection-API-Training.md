@@ -16,7 +16,7 @@ image:
 
 Tensorflow Object Detection API 설치 방법은 [이전 포스트](/tensorflow%20models/Tensorflow-Object-Detection-API-Installation/)를 참고해주세요.
 
-- [Tensorflow Object Detection API 소개](http://localhost:4000/tensorflow%20models/Tensorflow-Object-Detection-API/)
+- [Tensorflow Object Detection API 소개](/tensorflow%20models/Tensorflow-Object-Detection-API/)
 - [Tensorflow Object Detection API 설치하기](/tensorflow%20models/Tensorflow-Object-Detection-API-Installation/)
 - **Tensorflow Object Detection API를 활용한 모델 학습하기**
 
