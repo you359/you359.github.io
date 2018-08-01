@@ -16,6 +16,7 @@ image:
 
 Tensorflow Object Detection API 설치 방법은 [이전 포스트](/tensorflow%20models/Tensorflow-Object-Detection-API-Installation/)를 참고해주세요.
 
+- [Tensorflow Object Detection API 소개](http://localhost:4000/tensorflow%20models/Tensorflow-Object-Detection-API/)
 - [Tensorflow Object Detection API 설치하기](/tensorflow%20models/Tensorflow-Object-Detection-API-Installation/)
 - **Tensorflow Object Detection API를 활용한 모델 학습하기**
 
@@ -225,6 +226,45 @@ python object_detection/model_main.py \
 ```shell
 tensorboard --logdir=${MODEL_DIR} # path/to/train 위에서 지정한 모델 저장 경로
 ```
+
+### 추가 사항
+COCO dataset이나 Pet dataset 등 Tensorflow Object Detection API에서 제공하는 예제가 아닌, 본인이 만든 dataset을 이용해서 Faster R-CNN을 학습하고자 할 경우,
+별도의 detection network(resnet, inception등의 feature extractor)를 본인의 데이터셋을 이용해서 학습시킨 후, 다시 Faster R-CNN을 학습시키는 것이 효율적입니다.
+
+Faster R-CNN의 경우 4개 step으로 구성된 학습 단계가 있는데, 이 때, 1~2 step에서는 pre-trained model을 이용해서 RPN과 detection network를 각각 학습시킵니다.
+만약 이 때, pre-trained model이 없으면, RPN이 재대로 학습되지 않고, RPN이 재대로 학습되지 않으면 이후 지역 제안 후보 영역(region proposal)을 재대로 생성하지 못해서 detection network로 학습이 안되는 문제가 발생합니다.
+
+따라서, 본인의 domain에 맞는 feature extractor network를 미리 학습시키거나, imagenet과 같은 대규모 데이터셋으로 학습된 모델을 pre-trained model로 준비하여 적용하는 것이 좋습니다.
+pre-trained model의 적용은 pipeline configuration 에서 train_config 항목의 fine_tune_checkpoint에 pre-trained model의 ckpt 파일 경로를 추가해주면 됩니다.
+
+다음의 파일 내용을 참고해봅시다.
+
+/object_detection/protos/train.proto
+
+```protos
+  // Checkpoint to restore variables from. Typically used to load feature
+  // extractor variables trained outside of object detection.
+  optional string fine_tune_checkpoint = 7 [default=""];
+
+  // Type of checkpoint to restore variables from, e.g. 'classification' or
+  // 'detection'. Provides extensibility to from_detection_checkpoint.
+  // Typically used to load feature extractor variables from trained models.
+  optional string fine_tune_checkpoint_type = 22 [default=""];
+```
+
+train.proto 파일의 내용에 따르면,
+
+만약 Faster R-CNN 자체를 학습시킨 모델을 pre-trained model로 사용하고자 한다면, fine_tuen_checkpoint에는 해당 모델의 경로를,
+fine_tune_checkpoint_type에는 "detection" 이라는 type을 명시해줍니다.
+
+만약 feature extractor를 pre-trained model로 사용하고자 한다면, fine_tuen_checkpoint에는 해당 모델의 경로를,
+fine_tune_checkpoint_type에는 "classification" 이라는 type을 명시해줍니다.
+
+여기까지 Tensorflow Object Detection API를 활용해서 모델을 학습하는 방법에 대해 살펴보았습니다.
+
+보통 모델 학습에 걸리는 시간은 컴퓨팅환경에 따라 다릅니다. ..경험 내용 추가 예정..
+
+이제 다음 링크를 클릭하여 학습시킨 모델을 이용해서 입력 데이터를 추론하고, 검증/테스트 데이터를 이용해서 모델의 성능을 평가하는 방법에 대해 살펴봅시다.
 
 <!-- [<span style="color:red">Tensorflow Object Detection API을 활용한 모델 학습하기</span>]() -->
 

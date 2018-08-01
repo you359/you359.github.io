@@ -17,6 +17,7 @@ Tensorflow Models에 대한 소개는 [이전 포스트](/tensorflow models/Tens
 
 다음은 이번 포스트에서 소개할 Tensorflow Object Detection API의 설치 및 사용법에 관한 내용을 정리한 포스트입니다.
 
+- **Tensorflow Object Detection API 소개**
 - [Tensorflow Object Detection API 설치하기](/tensorflow%20models/Tensorflow-Object-Detection-API-Installation/)
 - [Tensorflow Object Detection API를 활용한 모델 학습하기](/tensorflow%20models/Tensorflow-Object-Detection-API-Training/)
 

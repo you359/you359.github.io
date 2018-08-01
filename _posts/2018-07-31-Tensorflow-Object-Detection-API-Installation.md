@@ -16,6 +16,7 @@ image:
 
 Object Detection에 대한 간략한 소개는 [이전 포스트](http://localhost:4000/tensorflow%20models/Tensorflow-Object-Detection-API/)를 참고해주세요.
 
+- [Tensorflow Object Detection API 소개](http://localhost:4000/tensorflow%20models/Tensorflow-Object-Detection-API/)
 - **Tensorflow Object Detection API 설치하기**
 - [Tensorflow Object Detection API를 활용한 모델 학습하기](/tensorflow%20models/Tensorflow-Object-Detection-API-Training/)
 
