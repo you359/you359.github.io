@@ -12,7 +12,7 @@ image:
 ---
 
 # Tensorflow Object Detection API
-이번 포스트에서는 Tensorflow Models에 포함된 Object Detection 기술에 대해서 간략히 살펴보겠습니다. 원문 링크는 [여기](https://github.com/tensorflow/models/tree/master/research/object_detection)를 참고하세요.<br/>
+이번 포스트에서는 Tensorflow Models에 포함된 Object Detection 기술에 대해서 간략히 살펴보겠습니다. 원글 내용은 [여기](https://github.com/tensorflow/models/tree/master/research/object_detection)를 참고하세요.<br/>
 또한, Tensorflow Models에 대한 소개는 [이전 포스트](/tensorflow models/Tensorflow-Models/)를 참고해주세요.
 
 다음은 이번 포스트에서 소개할 Tensorflow Object Detection API의 설치 및 사용법에 관한 내용을 정리한 포스트 리스트입니다.
