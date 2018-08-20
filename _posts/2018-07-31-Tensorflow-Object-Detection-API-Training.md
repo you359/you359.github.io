@@ -12,7 +12,7 @@ image:
 ---
 
 # Tensorflow Object Detection API
-이번 포스트에서는 Tensorflow Models에 포함된 Object Detection API를 활용해서 모델을 학습하는 방법에 대해 소개하겠습니다. 원문 링크는 [여기](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md)를 참고하세요.
+이번 포스트에서는 Tensorflow Models에 포함된 Object Detection API를 활용해서 모델을 학습하는 방법에 대해 소개하겠습니다. 원글 내용은 [여기](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md)를 참고하세요.
 
 Tensorflow Object Detection API 설치 방법은 [이전 포스트](/tensorflow%20models/Tensorflow-Object-Detection-API-Installation/)를 참고해주세요.
 
@@ -21,12 +21,12 @@ Tensorflow Object Detection API 설치 방법은 [이전 포스트](/tensorflow%
 - **Tensorflow Object Detection API를 활용한 모델 학습하기**
 
 ## Tensorflow Object Detection API를 활용한 모델 학습하기 [<span style="color:blue">[원문 링크]</span>](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/running_pets.md)
-위에서 소개된 원문 링크에서는 Google Cloud환경에서 Oxford-IIIT Pets 데이터셋을 사용하여 resnet-101을 feature extractor로 사용하는 Faster R-CNN을 학습시키는 방법에 대해 소개되고 있습니다.
+위에서 소개된 원문 링크에서는 Google Cloud환경에서 Oxford-IIIT Pets 데이터셋을 사용해서, resnet-101을 feature extractor로 사용하는 Faster R-CNN을 학습시키는 방법에 대해 소개하고 있습니다.
 또한 Transfer Leraning을 위해 COCO-pretrained 모델을 사용하는 방법 또한 제시됩니다.
 
 본 포스트에서는 위에서 소개된 원문 링크와는 달리, 로컬 컴퓨팅 환경에서 Pascal VOC 데이터셋을 이용해서 모델을 학습시키는 방법에 대해 살펴보겠습니다.
 
-자세한 내용은 다음의 원문들을 참고하세요.
+자세한 내용은 다음의 링크들을 참고하세요.
 - [입력 데이터 준비(Preparing inputs)](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/preparing_inputs.md)
 - [모델/학습/검증 파라미터 설정(Configuring an object detection pipeline)](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/configuring_jobs.md)
 - [로컬 컴퓨팅 환경에서 실행하기(Running Locally)](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/running_locally.md)
@@ -126,7 +126,7 @@ python object_detection/dataset_tools/create_pascal_tf_record.py \
 path/to/tensorflow/models/research/xxx.py
 ```
 
-Pascal VOC 데이터셋이 아닌 COCO나 여타 다른 데이터셋의 형식으로 annotation되어 있을 경우, [object_detection/dataset_tools폴더](https://github.com/tensorflow/models/tree/master/research/object_detection/dataset_tools) 에 포함된 create_xxxx_tf_record.py 파일을 사용합니다.
+Pascal VOC 데이터셋이 아닌 COCO나 여타 다른 데이터셋의 형식으로 annotation되어 있을 경우, [object_detection/dataset_tools폴더](https://github.com/tensorflow/models/tree/master/research/object_detection/dataset_tools) 에 포함된 create_xxxx_tf_record.py 파이썬 스크립트 파일을 사용합니다.
 - COCO dataset : create_coco_tf_record.py
 - kitti dataset : create_kitti_tf_record.py
 - oid dataset : create_oid_tf_record.py
@@ -155,10 +155,10 @@ item {
 ```
 
 ### 모델/학습/검증을 파라미터 구성하기
-대부분의 Object Detection 모델들은 여러가지 상황/상태의 데이터셋을 효과적으로 식별하기 위한 파라미터가 존재합니다.
+대부분의 Object Detection 모델들은 여러가지 데이터셋을 효과적으로 학습하거나, 식별하기 위한 모델 파라미터가 존재합니다.
 
 예를들어 Faster R-CNN의 경우, 후보 영역을 제안하기 위한 RPN을 학습시키기 위해, anchor라는 개념이 도입되어 있는데, 이 anchor의 크기나 비율(aspect ratio)를 설정해주어야 합니다.
-Tensorflow Object Detection API에서는 이러한 파라미터를 설정하는 것을 pipeline configuration이라 부르며, pipeline 또한 protobuf로 구성합니다.
+Tensorflow Object Detection API에서는 이러한 파라미터를 설정하는 것을 pipeline configuration이라 부르며, pipeline 또한 protobuf 파일로 구성합니다.
 
 pipeline config 파일은 다음과 같이 5개의 part로 구분되어 있습니다.
 - model
@@ -178,7 +178,7 @@ pipeline config 파일은 다음과 같이 5개의 part로 구분되어 있습�
     * 검증하고자 하는 입력 데이터 TFRecord 파일(앞서 준비한 검증 데이터 경로 - pascal_val.record)
     * label_map 정보
 
-자세한 내용은 [<span style="color:red">[원문]</span>](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/configuring_jobs.md)을 참고합시다.
+자세한 내용은 [<span style="color:blue">[여기]</span>](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/configuring_jobs.md)를 참고합시다.
 
 pipeline configuration 대한 예제 파일은 [object_detection/samples/configs 폴더](https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs)에서 살펴볼 수 있습니다.
 
@@ -228,9 +228,6 @@ tensorboard --logdir=${MODEL_DIR} # path/to/train 위에서 지정한 모델 저
 ```
 
 ### 추가 사항
-COCO dataset이나 Pet dataset 등 Tensorflow Object Detection API에서 제공하는 예제가 아닌, 본인이 만든 dataset을 이용해서 Faster R-CNN을 학습하고자 할 경우,
-별도의 detection network(resnet, inception등의 feature extractor)를 본인의 데이터셋을 이용해서 학습시킨 후, 다시 Faster R-CNN을 학습시키는 것이 효율적입니다.
-
 Faster R-CNN의 경우 4개 step으로 구성된 학습 단계가 있는데, 이 때, 1~2 step에서는 pre-trained model을 이용해서 RPN과 detection network를 각각 학습시킵니다.
 만약 이 때, pre-trained model이 없으면, RPN이 재대로 학습되지 않고, RPN이 재대로 학습되지 않으면 이후 지역 제안 후보 영역(region proposal)을 재대로 생성하지 못해서 detection network로 학습이 안되는 문제가 발생합니다.
 
@@ -262,9 +259,10 @@ fine_tune_checkpoint_type에는 "classification" 이라는 type을 명시해줍�
 
 여기까지 Tensorflow Object Detection API를 활용해서 모델을 학습하는 방법에 대해 살펴보았습니다.
 
-보통 모델 학습에 걸리는 시간은 컴퓨팅환경에 따라 다릅니다. ..경험 내용 추가 예정..
+보통 모델 학습에 걸리는 시간은 컴퓨팅환경에 따라 다릅니다.
 
-이제 다음 링크를 클릭하여 학습시킨 모델을 이용해서 입력 데이터를 추론하고, 검증/테스트 데이터를 이용해서 모델의 성능을 평가하는 방법에 대해 살펴봅시다.
+<!-- 컴퓨팅 파워에 따른 학습 속도 작성 -->
+<!-- 이제 다음 링크를 클릭하여 학습시킨 모델을 이용해서 입력 데이터를 추론하고, 검증/테스트 데이터를 이용해서 모델의 성능을 평가하는 방법에 대해 살펴봅시다. -->
 
 <!-- [<span style="color:red">Tensorflow Object Detection API을 활용한 모델 학습하기</span>]() -->
 
