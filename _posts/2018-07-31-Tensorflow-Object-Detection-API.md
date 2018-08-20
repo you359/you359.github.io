@@ -12,10 +12,10 @@ image:
 ---
 
 # Tensorflow Object Detection API
-이번 포스트에서는 Tensorflow Models에 포함된 Object Detection 기술에 대해 간략히 살펴보겠습니다. 원문 링크는 [여기](https://github.com/tensorflow/models/tree/master/research/object_detection)를 참고하세요.<br/>
-Tensorflow Models에 대한 소개는 [이전 포스트](/tensorflow models/Tensorflow-Models/)를 참고해주세요.
+이번 포스트에서는 Tensorflow Models에 포함된 Object Detection 기술에 대해서 간략히 살펴보겠습니다. 원문 링크는 [여기](https://github.com/tensorflow/models/tree/master/research/object_detection)를 참고하세요.<br/>
+또한, Tensorflow Models에 대한 소개는 [이전 포스트](/tensorflow models/Tensorflow-Models/)를 참고해주세요.
 
-다음은 이번 포스트에서 소개할 Tensorflow Object Detection API의 설치 및 사용법에 관한 내용을 정리한 포스트입니다.
+다음은 이번 포스트에서 소개할 Tensorflow Object Detection API의 설치 및 사용법에 관한 내용을 정리한 포스트 리스트입니다.
 
 - **Tensorflow Object Detection API 소개**
 - [Tensorflow Object Detection API 설치하기](/tensorflow%20models/Tensorflow-Object-Detection-API-Installation/)
@@ -48,7 +48,7 @@ Image Classification 은 단순히 이미지가 어떤것인지 예측하는 기
 Object Detection 기술의 비교에 대한 자세한 내용은 Jonathan Hui님이 작성한 블로그 포스트 [Object detection: speed and accuracy comparison (Faster R-CNN, R-FCN, SSD, FPN, RetinaNet and YOLOv3)](https://medium.com/@jonathan_hui/object-detection-speed-and-accuracy-comparison-faster-r-cnn-r-fcn-ssd-and-yolo-5425656ae359)와
 Google에서 발표한 [Speed/accuracy trade-offs for modern convolutional object detectors](https://arxiv.org/pdf/1611.10012.pdf)논문을 참고해주세요.
 
-따라서, 만약 자신의 분야에 Object Detection 을 적용해보고자 할 경우, 여러 모델들을 가능한 살펴보고 구현도 해봐야하는데 양적으로도, 구현 난이도적으로도 쉽지 않습니다.
+만약 자신의 분야에 Object Detection 을 적용해보고자 할 경우, 여러 모델들을 가능한 살펴보고 구현도 해봐야하는데 양적으로도, 구현 난이도적으로도 쉽지 않습니다.
 
 다행히도, Tensorflow Models에서는 이러한 Object Detection 모델들을 한번에 구현해놓은 API를 제공합니다.
 서론이 길어졌으니 바로 다음 링크를 클릭하여 Tensorflow Object Detection API를 설치하는 방법을 살펴봅시다.
