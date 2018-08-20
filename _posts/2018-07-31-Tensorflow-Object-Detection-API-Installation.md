@@ -12,7 +12,7 @@ image:
 ---
 
 # Tensorflow Object Detection API
-이번 포스트에서는 Tensorflow Models에 포함된 Object Detection API를 설치하는 방법에 대해 소개하겠습니다. 원문 링크는 [여기](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md)를 참고하세요.
+이번 포스트에서는 Tensorflow Models에 포함된 Object Detection API를 설치하는 방법에 대해 소개하겠습니다. 원글 내용은 [여기](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md)를 참고하세요.
 
 Object Detection에 대한 간략한 소개는 [이전 포스트](http://localhost:4000/tensorflow%20models/Tensorflow-Object-Detection-API/)를 참고해주세요.
 
@@ -36,8 +36,8 @@ Tensorflow의 Object Detection API를 활용하기 위해서는 먼저 다음의
 - contextlib2
 - cocoapi
 
-만약 anaconda를 이용해서 python을 설치하고, Tensorflow까지 설치하셨다면, 대부분은 이미 설치되어있습니다.
-그러나 만약 설치가 안되있다면 다음의 pip 및 apt-get 명령어를 통해 설치합니다.
+만약 anaconda를 이용해서 python을 설치한 후, Tensorflow까지 설치하셨다면, 대부분은 이미 설치되어있습니다.
+그러나 만약 설치가 안되있다면 다음의 pip 및 apt-get 명령어를 통해 의존성 라이브러리들을 설치합니다.
 
 ```shell
 # For CPU
@@ -77,12 +77,12 @@ cp -r pycocotools <path_to_tensorflow>/models/research/
 ```
 
 pycocotools는 Object Detection 모델을 evaluation 할 때 사용하는 evaluation metrics로 사용됩니다. 이후 COCO evaluation metrics를 사용하지 않더라도,
-Tensorflow Object Detection API는 내부적으로 COCO evaluation metrics를 기본으로 확인하기 때문에 필수적으로 설치하셔야합니다.
+Tensorflow Object Detection API는 내부적으로 COCO evaluation metrics를 기본으로 사용하기 때문에 필수적으로 설치하셔야합니다.
 
-(원문에서는 coco evaluation metrics가 흥미로우면 설치하라고 되어있고, default로 Pascal VOC evaluation metric를 사용한다고 되어있는데, 제가 실제로 해본 결과 기본적으로 설치가 필요하고, default도 Pascal VOC가 아닌것같습니다. 나중에 정확한 확인이 되면 수정하겠습니다.)
+(원문에서는 coco evaluation metrics가 흥미로우면 설치하라고 되어있고, default로 Pascal VOC evaluation metric를 사용한다고 되어있는데, 제가 실제로 해본 결과 기본적으로 cocoapi 설치가 필요하고, default도 Pascal VOC가 아닌것같습니다.)
 
 #### Protobuf 컴파일
-Tensorflow Object Detection API는 Object Detection 기술들의 설정이나 학습에 적용할 파라미터등을 Protobuf를 사용해서 설정합니다. 따라서 API를 사용하기위해서는 먼저 Protobuf 라이브러리를 컴파일해야합니다.
+Tensorflow Object Detection API는 Object Detection 모델들의 하이퍼파라미터 설정이나 학습에 적용할 파라미터등을 Protobuf를 사용해서 설정합니다. 따라서 API를 사용하기위해서는 먼저 Protobuf 라이브러리를 컴파일해야합니다.
 Protobuf 라이브러리 컴파일은 다음의 명령어를 사용해서 수행할 수 있습니다.
 
 ```shell
