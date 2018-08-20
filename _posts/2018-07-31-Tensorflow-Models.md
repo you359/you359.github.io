@@ -12,8 +12,10 @@ image:
 ---
 
 # Tensorflow Models
-이번 포스트에서는 Tensorflow github repo에 포함된 Tensorflow Models에 대해서 소개해보겠습니다. 원본링크는 [<span style="color:blue">여기</span>](https://github.com/tensorflow/models)를 참고하세요.
-Tensorflow Models github 페이지에는 다음과 같이 4가지 폴더로 구성되어 있습니다.
+이번 포스트에서는 Tensorflow github repo에 포함된 Tensorflow Models에 대해서 소개해보겠습니다.<br/>
+원글 내용은 [<span style="color:blue">여기</span>](https://github.com/tensorflow/models)를 참고하세요.<br/>
+Tensorflow Models github 페이지에는 다음과 같이 4가지 폴더로 구성되어 있습니다.<br/>
+
 - [official models](https://github.com/tensorflow/models/blob/master/official)
 
     official models에는 Tensorflow의 [high-level API](/tensorflow basic/Tensorflow-High-Level-API/)를 이용한 example 모델들이 포함되어 있습니다.
@@ -21,7 +23,7 @@ Tensorflow Models github 페이지에는 다음과 같이 4가지 폴더로 구�
 
 - [research models](https://github.com/tensorflow/models/tree/master/research)
 
-    research models에는 연구자들에의해 구현된 여러가지 연구 모델들이 포함되어 있습니다.
+    research models에는 연구자들에의해 구현된 여러가지 모델들이 포함되어 있습니다.
 
     특히 이 폴더에는 CNN, RNN 등 뿐만 아니라, AutoEncorder, Object Detection 등 인공지능 분야에서 연구되었던 다양한 딥 러닝 모델들이 Tensorflow로 구현되어 있습니다.
 
@@ -30,7 +32,7 @@ Tensorflow Models github 페이지에는 다음과 같이 4가지 폴더로 구�
 
 - [samples folder](https://github.com/tensorflow/models/blob/master/samples)
 
-    samples folder에는 다양한 블로그 포스트들에서 소개된 코드를 포함하여, Tensorflow의 기능을 잘 소개하는 code snippet과 smaller model들이 포함되어 있습니다.
+    samples folder에는 다양한 블로그 포스트에서 소개된 코드들이 있고, Tensorflow의 기능을 잘 소개하는 code snippet과 smaller model들이 포함되어 있습니다.
 
 - [tutorials folder](https://github.com/tensorflow/models/blob/master/tutorials)
 
