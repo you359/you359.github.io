@@ -2,7 +2,7 @@
 layout: post
 title: Tensorflow Models
 description: "이 포스트에서는 tensorflow github에 포함된 Tensorflow Models에 대해서 소개하겠습니다."
-modified: 2018-07-31
+modified: 2018-08-21
 tags: [Tensorflow, Tensorflow Models]
 category: Tensorflow Models
 image:

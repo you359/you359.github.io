@@ -2,7 +2,7 @@
 layout: post
 title: Tensorflow Object Detection API 설치하기
 description: "이 포스트에서는 Tensorflow Object Detection API를 설치하는 방법에 대해 소개하겠습니다."
-modified: 2018-07-31
+modified: 2018-08-21
 tags: [Tensorflow, Tensorflow Models, Object Detection]
 category: Tensorflow Models
 image:

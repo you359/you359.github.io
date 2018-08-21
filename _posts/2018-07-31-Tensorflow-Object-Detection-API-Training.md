@@ -2,7 +2,7 @@
 layout: post
 title: Tensorflow Object Detection API를 활용한 모델 학습하기
 description: "이 포스트에서는 Tensorflow Object Detection API를 활용해서 모델을 학습하는 방법에 대해 소개하겠습니다."
-modified: 2018-07-31
+modified: 2018-08-21
 tags: [Tensorflow, Tensorflow Models, Object Detection]
 category: Tensorflow Models
 image:

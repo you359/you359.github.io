@@ -2,7 +2,7 @@
 layout: post
 title: Tensorflow Object Detection API
 description: "이 포스트에서는 Tensorflow Models에 포함된 여러 모델 중, Object Detection 기술에 대해 간략히 살펴보겠습니다."
-modified: 2018-07-31
+modified: 2018-08-21
 tags: [Tensorflow, Tensorflow Models, Object Detection]
 category: Tensorflow Models
 image:
