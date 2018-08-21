@@ -2,7 +2,7 @@
 layout: post
 title: CNN Models
 description: "이 포스트에서는 LeNet, AlexNet, VGGNet부터 ResNet, GoogLeNet까지 다양한 CNN Model들과 Model들에서 사용한 주요 컨셉 등에 대해 다룰 예정입니다."
-modified: 2018-03-26
+modified: 2018-07-26
 tags: [CNN model]
 category: CNN Architecture
 image:
