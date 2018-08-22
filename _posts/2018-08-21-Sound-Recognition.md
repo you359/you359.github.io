@@ -2,7 +2,7 @@
 layout: post
 title: Sound Recognition
 description: "Sound Recognition을 위한 다양한 기술 정리"
-modified: 2018-08-22
+modified: 2018-08-23
 tags: [Sound Recognition]
 category: Sound Recognition
 image:
