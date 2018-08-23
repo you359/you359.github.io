@@ -8,7 +8,7 @@ category: Tensorflow Models
 image:
   feature: posts/tensorflow_bg.jpg
   credit: tensorflow
-  creditlink:
+  creditlink: https://www.tensorflow.org/
 ---
 
 # Tensorflow Models

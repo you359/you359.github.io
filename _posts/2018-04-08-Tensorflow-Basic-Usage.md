@@ -8,7 +8,7 @@ category: Tensorflow Practice
 image:
   feature: posts/tensorflow_bg.jpg
   credit: tensorflow
-  creditlink:
+  creditlink: https://www.tensorflow.org/
 ---
 
 # 텐서플로우 기본 활용

@@ -7,8 +7,8 @@ tags: [Keras, Tensorflow, Machine Learning]
 category: Keras Practice
 image:
   feature: posts/Keras_Logo.jpg
-  credit: tensorflow
-  creditlink:
+  credit: keras
+  creditlink: https://keras.io/
 ---
 
 # Keras 소개
