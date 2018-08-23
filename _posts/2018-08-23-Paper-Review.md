@@ -43,13 +43,13 @@ image:
 - do convnets learn correspondence?, 2014 [[paper]](http://papers.nips.cc/paper/5420-do-convnets-learn-correspondence.pdf)
 - Object Detectors Emerge in Deep Scene CNNs, 2014 [[paper]](https://arxiv.org/pdf/1412.6856.pdf)
 - Rich feature hierarchies for accurate object detection and semantic segmentation, 2014 [[paper]](https://www.cv-foundation.org/openaccess/content_cvpr_2014/papers/Girshick_Rich_Feature_Hierarchies_2014_CVPR_paper.pdf)
-- Striving for simplicity: The all convolutional net, 2014 [[paper]](https://arxiv.org/pdf/1412.6806.pdf)
+- Striving for simplicity: The all convolutional net, 2014 [[paper]](https://arxiv.org/pdf/1412.6806.pdf) [[review]](/cnn%20visualization/All-Convnet/)
 - Deep neural networks are easily fooled: High confidence predictions for unrecognizable images, 2015 [[paper]](https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Nguyen_Deep_Neural_Networks_2015_CVPR_paper.pdf)
 - explaining and harnessing adversarial examples, 2015 [[paper]](https://arxiv.org/pdf/1412.6572.pdf)
 - Understanding deep image representations by inverting them, 2015 [[paper]](https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Mahendran_Understanding_Deep_Image_2015_CVPR_paper.pdf)
-- <span style="color:var(--main-txt-color)">[CAM]</span> Learning Deep Features for Discriminative Localization, 2016 [[paper]](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Zhou_Learning_Deep_Features_CVPR_2016_paper.pdf)
+- <span style="color:var(--main-txt-color)">[CAM]</span> Learning Deep Features for Discriminative Localization, 2016 [[paper]](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Zhou_Learning_Deep_Features_CVPR_2016_paper.pdf) [[review]](/cnn%20visualization/CAM/)
 - Inverting visual representations with convolutional networks, 2016 [[paper]](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Dosovitskiy_Inverting_Visual_Representations_CVPR_2016_paper.pdf)
-- <span style="color:var(--main-txt-color)">[Grad-CAM]</span> Grad-CAM: Visual Explanations from Deep Networks via Gradient-Based Localization, 2017 [[paper]](http://openaccess.thecvf.com/content_ICCV_2017/papers/Selvaraju_Grad-CAM_Visual_Explanations_ICCV_2017_paper.pdf)
+- <span style="color:var(--main-txt-color)">[Grad-CAM]</span> Grad-CAM: Visual Explanations from Deep Networks via Gradient-Based Localization, 2017 [[paper]](http://openaccess.thecvf.com/content_ICCV_2017/papers/Selvaraju_Grad-CAM_Visual_Explanations_ICCV_2017_paper.pdf) [[review]](/cnn%20visualization/GradCAM/)
 
 ### Recurrent/Recursive Neural Network
 -
