@@ -14,6 +14,7 @@ image:
 <style>
 :root {
     --main-txt-color: coral;
+    --main-txt-datset-color: LimeGreen;
 }
 </style>
 
@@ -77,3 +78,4 @@ image:
 ### Image Forensics
 ### Financial Analysis
 ### Sound Recognition
+- <span style="color:var(--main-txt-datset-color)">[DATASET]</span> VoxCeleb: a large-scale speaker identification dataset, 2018 [[paper]](https://www.robots.ox.ac.uk/~vgg/publications/2017/Nagrani17/nagrani17.pdf) [[review]](/sound%20recognition/VoxCeleb/)
