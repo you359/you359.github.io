@@ -64,6 +64,7 @@ image:
 - Siamese Neural Networks for One-shot Image Recognition, 2015 [[paper]](https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf)
 - DEEP METRIC LEARNING USING TRIPLET NETWORK, 2015 [[paper]](https://arxiv.org/pdf/1412.6622.pdf)
 - FaceNet: A Unified Embedding for Face Recognition and Clustering, 2015 [[paper]](https://arxiv.org/pdf/1503.03832.pdf)
+- In Defense of the Triplet Loss for Person Re-Identification, 2017 [[paper]](https://arxiv.org/pdf/1703.07737.pdf)
 
 ## Unsupervised Learning
 ### Deep Belief Network
