@@ -4,11 +4,11 @@ title: Paper Review
 description: "AI 특히 ML/DL과 관련된 관심 논문 리스트"
 modified: 2018-08-23
 tags: [Survey]
-category: Paper List
+category: Paper Review
 image:
-  feature: abstract-3.jpg
-  credit:
-  creditlink:
+  feature: posts/review.jpg
+  credit: Nick Youngson
+  creditlink: http://www.thebluediamondgallery.com/typewriter/r/review.html
 ---
 
 <style>
