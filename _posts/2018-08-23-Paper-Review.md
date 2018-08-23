@@ -3,7 +3,7 @@ layout: post
 title: Paper Review
 description: "AI 특히 ML/DL과 관련된 관심 논문 리스트"
 modified: 2018-08-23
-tags: [Survey]
+tags: [Review]
 category: Paper Review
 image:
   feature: posts/review.jpg

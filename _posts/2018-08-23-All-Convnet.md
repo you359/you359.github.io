@@ -3,7 +3,7 @@ layout: post
 title: Paper Review - All Convolutional Net
 description: "Three Visualization Techniques(backpropagation, deconvnet, guided-backpropagation)"
 modified: 2018-08-23
-tags: [Survey, Keras, Guided-Backpropoagation]
+tags: [Review, Keras, Guided-Backpropoagation]
 category: CNN Visualization
 image:
   feature: posts/data-vis.jpg
