@@ -2,7 +2,7 @@
 layout: post
 title: Paper Review
 description: "AI 특히 ML/DL과 관련된 관심 논문 리스트"
-modified: 2018-08-23
+modified: 2018-08-24
 tags: [Review]
 category: Paper Review
 image:
@@ -32,8 +32,19 @@ image:
 - <span style="color:var(--main-txt-color)">[XceptionNet]</span> Xception: Deep Learning with Depthwise Separable Convolutions, 2017 [[paper]](http://openaccess.thecvf.com/content_cvpr_2017/papers/Chollet_Xception_Deep_Learning_CVPR_2017_paper.pdf)
 
 #### Object Detection
-- <span style="color:var(--main-txt-color)">[Fast R-CNN]</span>
-- <span style="color:var(--main-txt-color)">[Faster R-CNN]</span>
+- <span style="color:var(--main-txt-color)">[OverFeat]</span> OverFeat: Integrated Recognition, Localization and Detection using Convolutional Networks, 2013 [[paper]](https://arxiv.org/abs/1312.6229)
+- <span style="color:var(--main-txt-color)">[R-CNN]</span> Rich Feature Hierarchies for Accurate Object Detection and Semantic Segmentation, 2014 [[paper]](https://www.cv-foundation.org/openaccess/content_cvpr_2014/papers/Girshick_Rich_Feature_Hierarchies_2014_CVPR_paper.pdf)
+- <span style="color:var(--main-txt-color)">[YOLO]</span> You Only Look Once: Unified, Real-Time Object Detection, 2015 [[paper]](https://arxiv.org/pdf/1506.02640.pdf)
+- <span style="color:var(--main-txt-color)">[SPP-Net]</span> Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition, 2015 [[paper]](https://ieeexplore.ieee.org/abstract/document/7005506/)
+- <span style="color:var(--main-txt-color)">[Fast R-CNN]</span> Fast r-cnn, 2015 [[paper]](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Girshick_Fast_R-CNN_ICCV_2015_paper.pdf)
+- <span style="color:var(--main-txt-color)">[Faster R-CNN]</span> Faster R-CNN: towards real-time object detection with region proposal networks, 2015 [[paper]](http://papers.nips.cc/paper/5638-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks.pdf)
+- <span style="color:var(--main-txt-color)">[SSD]</span> SSD: Single Shot MultiBox Detector, 2015 [[paper]](https://arxiv.org/pdf/1512.02325.pdf)
+- <span style="color:var(--main-txt-color)">[R-FCN]</span> R-FCN: Object Detection via Region-based Fully Convolutional Networks, 2016 [[paper]](https://arxiv.org/pdf/1605.06409.pdf)
+- <span style="color:var(--main-txt-color)">[FPN]</span> Feature Pyramid Networks for Object Detection, 2016 [[paper]](https://arxiv.org/pdf/1612.03144.pdf)
+- <span style="color:var(--main-txt-color)">[YOLOv2, YOLO9000]</span> YOLO9000: Better, Faster, Stronger, 2016 [[paper]](https://arxiv.org/pdf/1612.08242.pdf)
+- <span style="color:var(--main-txt-color)">[Mask R-CNN]</span> Mask R-CNN, 2017 [[paper]](https://ieeexplore.ieee.org/abstract/document/8237584/)
+- <span style="color:var(--main-txt-color)">[RetinaNet]</span> Focal Loss for Dense Object Detection, 2017 [[paper]](https://arxiv.org/pdf/1708.02002.pdf)
+- <span style="color:var(--main-txt-color)">[YOLOv3]</span> YOLOv3: An Incremental Improvement, 2018 [[paper]](https://pjreddie.com/media/files/papers/YOLOv3.pdf)
 
 #### Semantic Segmantation
 -
@@ -57,15 +68,6 @@ image:
 
 ### Both CNN & RNN
 
-### Meta Learning
-#### Siamese Network
-- Learning a Similarity Metric Discriminatively with Application to Face Verification, 2005 [[paper]](http://yann.lecun.com/exdb/publis/pdf/chopra-05.pdf)
-- Learning Fine-grained Image Similarity with Deep Ranking, 2014 [[paper]](https://arxiv.org/pdf/1404.4661.pdf)
-- Siamese Neural Networks for One-shot Image Recognition, 2015 [[paper]](https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf)
-- DEEP METRIC LEARNING USING TRIPLET NETWORK, 2015 [[paper]](https://arxiv.org/pdf/1412.6622.pdf)
-- FaceNet: A Unified Embedding for Face Recognition and Clustering, 2015 [[paper]](https://arxiv.org/pdf/1503.03832.pdf)
-- In Defense of the Triplet Loss for Person Re-Identification, 2017 [[paper]](https://arxiv.org/pdf/1703.07737.pdf)
-
 ## Unsupervised Learning
 ### Deep Belief Network
 ### Auto Encoder
@@ -73,6 +75,15 @@ image:
 
 ## Reinforcement Learning
 ### DQN
+
+## Meta Learning
+### Siamese Network
+- Learning a Similarity Metric Discriminatively with Application to Face Verification, 2005 [[paper]](http://yann.lecun.com/exdb/publis/pdf/chopra-05.pdf)
+- Learning Fine-grained Image Similarity with Deep Ranking, 2014 [[paper]](https://arxiv.org/pdf/1404.4661.pdf)
+- Siamese Neural Networks for One-shot Image Recognition, 2015 [[paper]](https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf)
+- DEEP METRIC LEARNING USING TRIPLET NETWORK, 2015 [[paper]](https://arxiv.org/pdf/1412.6622.pdf)
+- FaceNet: A Unified Embedding for Face Recognition and Clustering, 2015 [[paper]](https://arxiv.org/pdf/1503.03832.pdf)
+- In Defense of the Triplet Loss for Person Re-Identification, 2017 [[paper]](https://arxiv.org/pdf/1703.07737.pdf)
 
 # Domain
 ### Fire Detection
