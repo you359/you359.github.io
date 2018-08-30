@@ -146,7 +146,7 @@ $$
     이 때, 동일 triplet내에서 positive image와 in-class negative samples 로 구해진 negative image를 구별하기 위해 다음 수식과 같이 마진(margin)을 두어 샘플링합니다.
 
     $$
-    r_{i, i+} - r_{i, i-} \req T_r, \forall t_i = (p_i,p_i^+, p_i^-)
+    r_{i, i+} - r_{i, i-} \geq T_r, \forall t_i = (p_i,p_i^+, p_i^-)
     $$
 
 이 논문에서는 위 조건들을 만족하지 않은 triplet은 사용하지 않았습니다.
