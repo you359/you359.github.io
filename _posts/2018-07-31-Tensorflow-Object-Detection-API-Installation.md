@@ -2,7 +2,7 @@
 layout: post
 title: Tensorflow Object Detection API 설치하기
 description: "이 포스트에서는 Tensorflow Object Detection API를 설치하는 방법에 대해 소개하겠습니다."
-modified: 2018-08-21
+modified: 2018-09-03
 tags: [Tensorflow, Tensorflow Models, Object Detection]
 category: Tensorflow Models
 image:
@@ -59,6 +59,9 @@ pip install --user jupyter
 pip install --user matplotlib
 ```
 
+** for windows **
+    - window에서는 다음의 링크를 참고해서 protobuf를 설치합시다. [Windows Protobuf How To](https://github.com/maierfelix/POGOserver/wiki/Windows-Protobuf-How-To)
+
 #### tensorflow/models 다운로드
 Tensorflow Object Detection API를 사용하기위해, 먼저 github repo인 tensorflow/models를 클론(다운로드)합니다.
 
@@ -110,8 +113,7 @@ python object_detection/builders/model_builder_test.py
 
 #### Python 3.x 버전 오류
 Tensorflow Object Detection API를 직접 사용해본 결과,
-Python 3.x 버전에서는 꾀 많은 오류가 발생합니다. 향후 컴퓨팅 환경을 리셋한 후, Python 3.x 버전에서 발생하는 오류들을 정리해보도록 하겠습니다.
-
+Python 3.x 버전에서는 꾀 많은 오류가 발생합니다.
 이러한 오류는 tensorflow/models github repo의 issues에서 쉽게 찾아보실 수 있습니다.
 
 설치가 완료되었다면, 이제 다음 링크를 클릭하여 Tensorflow Object Detection API에서 제공하는 Object Detection 모델을 학습하는 방법에 대해 살펴봅시다.

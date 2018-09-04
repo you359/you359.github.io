@@ -2,7 +2,7 @@
 layout: post
 title: Tensorflow Object Detection API를 활용한 모델 학습하기
 description: "이 포스트에서는 Tensorflow Object Detection API를 활용해서 모델을 학습하는 방법에 대해 소개하겠습니다."
-modified: 2018-08-21
+modified: 2018-09-03
 tags: [Tensorflow, Tensorflow Models, Object Detection]
 category: Tensorflow Models
 image:
@@ -115,6 +115,10 @@ python object_detection/dataset_tools/create_pascal_tf_record.py \
     --output_path=pascal_val.record
 ```
 
+** error fix **
+    - python 3.x의 경우, "FutureWarning: The behavior of this method will change in future versions. Use specific 'len(elem)' or 'elem is not None' test instead." 에러 발생함
+        - python 2.x와 3.x간의 문법 변환에 따른 Warning이므로 무시해도 됨
+
 - label_map_path : 개체의 클래스 label을 맵핑해놓은 protobuf 파일의 경로(path)
 - data_dir : Pascal VOC 2012 데이터셋의 경로(path)
 - year : Pascal VOC의 경우 대표적으로 2007과 2012가 있으며, 이번 포스트에서는 2012를 사용하므로 VOC2012를 사용
@@ -220,6 +224,10 @@ python object_detection/model_main.py \
 <span style="color:red">여기서 NUM_TRAIN_STEP과 NUM_EVAL_STEP은 명확하게 확인이 안되어, 확인되는데로 다시 정리해두겠습니다.</span>
 
 앞의 커멘드를 입력하면 구성한 pipeline config파일을 참조해서 자동으로 Object Detection 모델을 학습하게됩니다.
+
+** error fix **
+    - can't pickle dict_values objects
+        - object_detection/model_lib.py - line 389에서 "category_index.values()"를 list(category_index.values())로 변경
 
 학습의 경과는 TensorBoard를 이용해서 확인할 수 있습니다. 다음의 커멘드를 사용해서 경과를 확인합니다.
 
