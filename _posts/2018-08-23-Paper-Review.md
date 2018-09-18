@@ -2,7 +2,7 @@
 layout: post
 title: Paper Review
 description: "AI 특히 ML/DL과 관련된 관심 논문 리스트"
-modified: 2018-08-24
+modified: 2018-09-18
 tags: [Review]
 category: Paper Review
 image:
@@ -116,7 +116,6 @@ image:
 - <span style="color:var(--main-txt-datset-color)">[DATASET]</span> Crop/Weed Field Image Dataset [[paper]](https://pdfs.semanticscholar.org/58a0/9b1351ddb447e6abdede7233a4794d538155.pdf) [[site]](https://github.com/cwfid/dataset)
 - <span style="color:var(--main-txt-datset-color)">[DATASET]</span> University of Bonn Photogrammetry, IGG [[site]](http://www.ipb.uni-bonn.de/data/)
 - <span style="color:var(--main-txt-datset-color)">[DATASET]</span> Flavia leaf Dataset [[site]](http://flavia.sourceforge.net/)
-    + currently not available!
 - <span style="color:var(--main-txt-datset-color)">[DATASET]</span> Syngenta Crop Challenge 2017 [[site]](https://www.ideaconnection.com/syngenta-crop-challenge/challenge.php)
 - <span style="color:var(--main-txt-datset-color)">[DATASET]</span> Plant Image Analysis [[site]](https://www.plant-image-analysis.org/dataset)
 - <span style="color:var(--main-txt-datset-color)">[DATASET]</span> PlantVillage Disease Classification Challenge - Color Images [[site]](https://zenodo.org/record/1204914#.W6CpEKYzb-g)
