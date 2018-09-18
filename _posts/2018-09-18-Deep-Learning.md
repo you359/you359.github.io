@@ -16,16 +16,12 @@ image:
 본 포스트 시리즈에서는 Deep Learning을 공부한 후, 다음 목차별로 정리할 계획입니다.
 
 1. Introduction
-
 ### Part I: Applied Math and Machine Learning Basics
-
 2. Linear Algebra
 3. Probability and Information Theory
 4. Numerical Computation
 5. Machine Learning Basics
-
 ### Part II: Modern Practical Deep Networks
-
 6. Deep Feedforward Networks
 7. Regularization for Deep Learning
 8. Optimization for Training Deep Models
@@ -33,9 +29,7 @@ image:
 10. Sequence Modeling: Recurrent and Recursive Nets
 11. Practical Methodology
 12. Applications
-
 ### Part III: Deep Learning Research
-
 13. Linear Factor Models
 14. Autoencoders
 15. Representation Learning

@@ -42,31 +42,21 @@ Automatic Speech Recognition (ASR) 은 사람의 음성과 기계간의 상호 �
 책의 목차의 대제목은 다음과 같습니다.
 
 1. Introduction
-
 ### Part 1 Conventional Acoustic Models
-
 2. Gaussian Mixture Models
 3. Hidden Markov Models and the Variants
-
 ### Part 2 Deep Neural Networks
-
 4. Deep Neural Networks
 5. Advanced Model Initialization Techniques
-
 ### Part 3 Deep Neural Network-Hidden Markov Model Hybrid Systems for Automatic Speech Recognition
-
 6. Deep Neural Network-Hidden Markov Model Hybrid Systems
 7. Training and Decoding Speedup
 8. Deep Neural Network Sequence-Discriminative Training
-
 ### Part 4 Representation Learning in Deep Neural Networks
-
 9. Feature Representation Learning in Deep Neural Networks
 10. Fuse Deep Neural Network and Gaussian Mixture Model Systems
 11. Adaptation of Deep Neural Networks
-
 ### Part 5 Advanced Deep Models
-
 12. Representation Sharing and Transfer in Deep Neural Networks
 13. Recurrent Neural Networks and Related Models
 14. Computational Network
