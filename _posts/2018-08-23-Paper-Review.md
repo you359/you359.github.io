@@ -85,9 +85,38 @@ image:
 - FaceNet: A Unified Embedding for Face Recognition and Clustering, 2015 [[paper]](https://arxiv.org/pdf/1503.03832.pdf)
 - In Defense of the Triplet Loss for Person Re-Identification, 2017 [[paper]](https://arxiv.org/pdf/1703.07737.pdf)
 
+## Curriculum learning
+
+
 # Domain
+### image restoration/reconstruction (super-resolution)
 ### Fire Detection
 ### Image Forensics
 ### Financial Analysis
 ### Sound Recognition
 - <span style="color:var(--main-txt-datset-color)">[DATASET]</span> VoxCeleb: a large-scale speaker identification dataset, 2018 [[paper]](https://www.robots.ox.ac.uk/~vgg/publications/2017/Nagrani17/nagrani17.pdf) [[review]](/sound%20recognition/VoxCeleb/)
+
+### Agriculture
+- Evaluation of Features for Leaf Classification in Challenging Conditions, 2015 [[paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7045965)
+- Deep Neural Networks Based Recognition of Plant Diseases by Leaf Image Classification, 2016 [[paper]](https://www.hindawi.com/journals/cin/2016/3289801/abs/)
+- Using Deep Learning for Image-Based Plant Disease Detection, 2016 [[paper]](https://arxiv.org/ftp/arxiv/papers/1604/1604.03169.pdf)
+- A Deep Learning-based Approach for Banana Leaf Diseases Classification, 2017 [[paper]](http://btw2017.informatik.uni-stuttgart.de/slidesandpapers/E1-10/paper_web.pdf)
+
+
+- Deep learning in agriculture: A survey, 2018 [[paper]](https://reader.elsevier.com/reader/sd/pii/S0168169917308803?token=02BFEA0B3D0F7C34BDA46E7C9E8B866AF2CB401526D908DA60CF0EE228E1FE977C9BC95E37F2E5CD779C196671C3C080)
+
+- <span style="color:var(--main-txt-datset-color)">[DATASET]</span> University of Arcansas, Plants Dataset [[site1]](https://plants.uaex.edu/herbicide/) [[site2]](https://www.uaex.edu/yard-garden/resource-library/diseases/)
+- <span style="color:var(--main-txt-datset-color)">[DATASET]</span> EPEL, Plant Village Dataset [[site]](https://plantvillage.psu.edu/)
+    + currently not available!
+- <span style="color:var(--main-txt-datset-color)">[DATASET]</span> Leafsnap Dataset [[site]](http://leafsnap.com/dataset/)
+- <span style="color:var(--main-txt-datset-color)">[DATASET]</span> LifeCLEF Dataset [[site]](https://www.imageclef.org/2014/lifeclef/plant)
+- <span style="color:var(--main-txt-datset-color)">[DATASET]</span> Africa Soil Information Service(AFSIS) Dataset [[site]](http://africasoils.net/services/data/)
+- <span style="color:var(--main-txt-datset-color)">[DATASET]</span> UC Merced Land Use Dataset [[site]](http://weegee.vision.ucmerced.edu/datasets/landuse.html)
+- <span style="color:var(--main-txt-datset-color)">[DATASET]</span> MalayaKew Dataset [[site]](http://web.fsktm.um.edu.my/~cschan/downloads_MKLeaf_dataset.html)
+- <span style="color:var(--main-txt-datset-color)">[DATASET]</span> Crop/Weed Field Image Dataset [[paper]](https://pdfs.semanticscholar.org/58a0/9b1351ddb447e6abdede7233a4794d538155.pdf) [[site]](https://github.com/cwfid/dataset)
+- <span style="color:var(--main-txt-datset-color)">[DATASET]</span> University of Bonn Photogrammetry, IGG [[site]](http://www.ipb.uni-bonn.de/data/)
+- <span style="color:var(--main-txt-datset-color)">[DATASET]</span> Flavia leaf Dataset [[site]](http://flavia.sourceforge.net/)
+    + currently not available!
+- <span style="color:var(--main-txt-datset-color)">[DATASET]</span> Syngenta Crop Challenge 2017 [[site]](https://www.ideaconnection.com/syngenta-crop-challenge/challenge.php)
+- <span style="color:var(--main-txt-datset-color)">[DATASET]</span> Plant Image Analysis [[site]](https://www.plant-image-analysis.org/dataset)
+- <span style="color:var(--main-txt-datset-color)">[DATASET]</span> PlantVillage Disease Classification Challenge - Color Images [[site]](https://zenodo.org/record/1204914#.W6CpEKYzb-g)
