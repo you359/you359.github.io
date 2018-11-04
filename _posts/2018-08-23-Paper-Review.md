@@ -65,6 +65,7 @@ image:
 
 ### Recurrent/Recursive Neural Network
 -
+-
 
 ### Both CNN & RNN
 
@@ -94,6 +95,10 @@ image:
 ### Image Forensics
 ### Financial Analysis
 ### Sound Recognition
+[GMM-UBM] <br />
+- Speaker Verification Using Adapted Gaussian, 2000 [[paper]](http://speech.ee.ntu.edu.tw/previous_version/Speaker%20Verification%20Using%20Adapted%20Gaussain%20Mixture%20Models.pdf) <!--TODO: Review -->
+
+
 - <span style="color:var(--main-txt-datset-color)">[DATASET]</span> VoxCeleb: a large-scale speaker identification dataset, 2018 [[paper]](https://www.robots.ox.ac.uk/~vgg/publications/2017/Nagrani17/nagrani17.pdf) [[review]](/sound%20recognition/VoxCeleb/)
 
 ### Agriculture
