@@ -130,11 +130,10 @@ image:
 - <span style="color:var(--main-txt-datset-color)">[DATASET]</span> VoxCeleb: a large-scale speaker identification dataset, 2018 [[paper]](https://www.robots.ox.ac.uk/~vgg/publications/2017/Nagrani17/nagrani17.pdf) [[review]](/sound%20recognition/VoxCeleb/)
 
 ### Agriculture
-- Evaluation of Features for Leaf Classification in Challenging Conditions, 2015 [[paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7045965)
-- Deep Neural Networks Based Recognition of Plant Diseases by Leaf Image Classification, 2016 [[paper]](https://www.hindawi.com/journals/cin/2016/3289801/abs/)
+- Evaluation of Features for Leaf Classification in Challenging Conditions, 2015 [[paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7045965) [[review]](/agriculture/Evaluation-of-Features-for-Leaf-Classification-in-Challenging-Conditions/)
+- Deep Neural Networks Based Recognition of Plant Diseases by Leaf Image Classification, 2016 [[paper]](https://www.hindawi.com/journals/cin/2016/3289801/abs/) [[review]](/agriculture/Deep-Neural-Networks-Based-Recognition-of-Plant-Diseases-by-Leaf-Image-Classification/)
 - Using Deep Learning for Image-Based Plant Disease Detection, 2016 [[paper]](https://arxiv.org/ftp/arxiv/papers/1604/1604.03169.pdf)
-- A Deep Learning-based Approach for Banana Leaf Diseases Classification, 2017 [[paper]](http://btw2017.informatik.uni-stuttgart.de/slidesandpapers/E1-10/paper_web.pdf)
-
+- A Deep Learning-based Approach for Banana Leaf Diseases Classification, 2017 [[paper]](http://btw2017.informatik.uni-stuttgart.de/slidesandpapers/E1-10/paper_web.pdf) [[review]](/agriculture/A-Deep-Learning-based-Approach-for-Banana-Leaf-Diseases-Classification/)
 
 - Deep learning in agriculture: A survey, 2018 [[paper]](https://reader.elsevier.com/reader/sd/pii/S0168169917308803?token=02BFEA0B3D0F7C34BDA46E7C9E8B866AF2CB401526D908DA60CF0EE228E1FE977C9BC95E37F2E5CD779C196671C3C080)
 
