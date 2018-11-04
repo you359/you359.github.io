@@ -15,6 +15,7 @@ image:
 :root {
     --main-txt-color: coral;
     --main-txt-datset-color: LimeGreen;
+    --main-txt-subtitle-color: cornflowerblue;
 }
 </style>
 
@@ -95,9 +96,36 @@ image:
 ### Image Forensics
 ### Financial Analysis
 ### Sound Recognition
-[GMM-UBM] <br />
+<span style="color:var(--main-txt-subtitle-color)">[GMM-UBM]</span> <br />
 - Speaker Verification Using Adapted Gaussian, 2000 [[paper]](http://speech.ee.ntu.edu.tw/previous_version/Speaker%20Verification%20Using%20Adapted%20Gaussain%20Mixture%20Models.pdf) <!--TODO: Review -->
 
+<span style="color:var(--main-txt-subtitle-color)">[GSV-SVM, JFA]</span> <br />
+- SVM based speaker verification using a GMM supervector kernel and NAP variability compensation, 2006 [[paper]](https://ieeexplore.ieee.org/abstract/document/1659966)
+- Speaker and session variability in GMM-based speaker verification, 2007 [[paper]](https://www.crim.ca/perso/patrick.kenny/FAver.pdf)
+
+<span style="color:var(--main-txt-subtitle-color)">[i-vector/CSS]</span> <br />
+- Discriminative and generative approaches for long-and short-term speaker characteristics modeling: application to speaker verification, 2009 [[paper]](http://espace.etsmtl.ca/33/)
+
+<span style="color:var(--main-txt-subtitle-color)">[i-vector/PLDA]</span> <br />
+- Bayesian speaker verification with heavy-tailed priors., 2010 [[pdf]](https://www.crim.ca/perso/patrick.kenny/kenny_Odyssey2010_presentation.pdf)
+- Front-end factor analysis for speaker verification, 2011 [[paper]](https://ieeexplore.ieee.org/abstract/document/5545402)
+- Supervised domain adaptation for i-vector based speaker recognition, 2014 [[paper]](https://ieeexplore.ieee.org/abstract/document/5545402)
+
+<span style="color:var(--main-txt-subtitle-color)">[i-vector/DNN]</span> <br />
+- A novel scheme for speaker recognition using a phonetically-aware deep neural network, 2014 [[paper]](https://ieeexplore.ieee.org/abstract/document/6853887)
+- Speaker verification using kernel-based binary classifiers with binary operation derived features, 2014 [[paper]](http://www.iis.sinica.edu.tw/papers/whm/17137-F.pdf)
+- Denoising autoencoder-based speaker feature restoration for utterances of short duration, 2015 [[paper]](https://pdfs.semanticscholar.org/9f20/76afd677c888447291402f55fa60ac51086a.pdf)
+- Discriminative autoencoders for speaker verification, 2017 [[paper]](https://ieeexplore.ieee.org/abstract/document/7953183)
+- Advanced b-vector system based deep neural network as classifier for speaker verification, 2016 [[paper]](https://ieeexplore.ieee.org/abstract/document/7472722)
+
+<span style="color:var(--main-txt-subtitle-color)">[DNN]</span> <br />
+- Deep neural networks for small footprint text-dependent speaker verification., 2014 [[paper]](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.674.3686&rep=rep1&type=pdf)
+- End-to-end text-dependent speaker verification, 2016 [[paper]](https://ieeexplore.ieee.org/abstract/document/7472652)
+- End-to-end attention based text-dependent speaker verification, 2016 [[paper]](https://ieeexplore.ieee.org/abstract/document/7846261)
+- [Deep speaker]: an end-to-end neural speaker embedding system, 2017 [[paper]](https://arxiv.org/abs/1705.02304) <!--TODO: Review -->
+- A complete end-to-end speaker verification system using deep neural networks: From raw signals to verification result, 2018 [[paper]](https://ieeexplore.ieee.org/abstract/document/8462575)
+- Generalised Discriminative Transform via Curriculum Learning for Speaker Recognition, 2018 [[paper]](https://ieeexplore.ieee.org/abstract/document/8461296)
+- Generalized end-to-end loss for speaker verification, 2018 [[paper]](https://ieeexplore.ieee.org/abstract/document/8462665)
 
 - <span style="color:var(--main-txt-datset-color)">[DATASET]</span> VoxCeleb: a large-scale speaker identification dataset, 2018 [[paper]](https://www.robots.ox.ac.uk/~vgg/publications/2017/Nagrani17/nagrani17.pdf) [[review]](/sound%20recognition/VoxCeleb/)
 
