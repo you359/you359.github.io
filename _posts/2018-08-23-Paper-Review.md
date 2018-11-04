@@ -81,10 +81,10 @@ image:
 ## Meta Learning
 ### Siamese Network
 - Learning a Similarity Metric Discriminatively with Application to Face Verification, 2005 [[paper]](http://yann.lecun.com/exdb/publis/pdf/chopra-05.pdf)
-- Learning Fine-grained Image Similarity with Deep Ranking, 2014 [[paper]](https://arxiv.org/pdf/1404.4661.pdf)
+- Learning Fine-grained Image Similarity with Deep Ranking, 2014 [[paper]](https://arxiv.org/pdf/1404.4661.pdf) [[review]](/meta%20learning/DeepRanking/)
 - Siamese Neural Networks for One-shot Image Recognition, 2015 [[paper]](https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf)
-- DEEP METRIC LEARNING USING TRIPLET NETWORK, 2015 [[paper]](https://arxiv.org/pdf/1412.6622.pdf)
-- FaceNet: A Unified Embedding for Face Recognition and Clustering, 2015 [[paper]](https://arxiv.org/pdf/1503.03832.pdf)
+- DEEP METRIC LEARNING USING TRIPLET NETWORK, 2015 [[paper]](https://arxiv.org/pdf/1412.6622.pdf) [[review]](/meta%20learning/DeepMetricLearning_usingTripletNetwork/)
+- FaceNet: A Unified Embedding for Face Recognition and Clustering, 2015 [[paper]](https://arxiv.org/pdf/1503.03832.pdf) [[review]](/meta%20learning/FaceNet/)
 - In Defense of the Triplet Loss for Person Re-Identification, 2017 [[paper]](https://arxiv.org/pdf/1703.07737.pdf)
 
 ## Curriculum learning
