@@ -84,8 +84,7 @@ $$
 ※ 모든 시스템에는 dropout과 batch normalization 이 적용되었음
 
 ### 결과
-- pre-emphasis 의 적용 결과, 학습에 의한 fine tuning 으로 [[-0.97 1]] 에서 [[-0.83 1.12]]로 값이 변경되었고,
-EER(Equal Error Rate) metric 으로 검증한 결과, pre-emphasis를 적용했을 때 24% 작은 EER을 얻을 수 있었다고 합니다.
+- pre-emphasis 의 적용 결과, 학습에 의한 fine tuning 으로 [[-0.97 1]] 에서 [[-0.83 1.12]]로 값이 변경되었고, EER(Equal Error Rate) metric 으로 검증한 결과, pre-emphasis를 적용했을 때 24% 작은 EER을 얻을 수 있었다고 합니다.
 - RACNN의 출력 임베딩 벡터를 CSS(Cosine Similarity Scoring)으로 계산해서, 결과를 만들 경우, d-vector baseline보다 낮은 성능을 보였지만, end-to-end로 구성한 시스템이서는 좋은 결과를 보였으며(baseline, RACNN(CSS), RACNN(end to end) | 4.89, 5.22, 3.94)
 - 또한, RACNN-LSTM의 경우 CSS로 계산해도 baseline 보다 좋은 결과를 보였고(3.82), end to end RACNN-LSTM은 3.63 EER로 가장 높은 성능을 보였습니다.
 
