@@ -122,7 +122,7 @@ image:
 - Deep neural networks for small footprint text-dependent speaker verification., 2014 [[paper]](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.674.3686&rep=rep1&type=pdf)
 - End-to-end text-dependent speaker verification, 2016 [[paper]](https://ieeexplore.ieee.org/abstract/document/7472652)
 - End-to-end attention based text-dependent speaker verification, 2016 [[paper]](https://ieeexplore.ieee.org/abstract/document/7846261)
-- [Deep speaker]: an end-to-end neural speaker embedding system, 2017 [[paper]](https://arxiv.org/abs/1705.02304) <!--TODO: Review -->
+- <span style="color:var(--main-txt-color)">[Deep speaker]</span>: an end-to-end neural speaker embedding system, 2017 [[paper]](https://arxiv.org/abs/1705.02304) <!--TODO: Review -->
 - A complete end-to-end speaker verification system using deep neural networks: From raw signals to verification result, 2018 [[paper]](https://ieeexplore.ieee.org/abstract/document/8462575) [[review]](/sound%20recognition/A-Complete-End-to-end-speaker-verification-system-using-deep-neural-networks/)
 - Generalised Discriminative Transform via Curriculum Learning for Speaker Recognition, 2018 [[paper]](https://ieeexplore.ieee.org/abstract/document/8461296)
 - Generalized end-to-end loss for speaker verification, 2018 [[paper]](https://ieeexplore.ieee.org/abstract/document/8462665)
