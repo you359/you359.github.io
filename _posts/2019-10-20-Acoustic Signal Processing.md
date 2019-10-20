@@ -127,21 +127,33 @@ image:
 
 ## Localization $ Detection results
 
++ noisy Log Magnitude Spectra
++ clean Log Magnitude Spectra
++ estimated Direction of Arrival
++ detected voice activity
+
 <strong stype="font-size: 1.17em;"> 1. SNR -21.37 (5m between sound source and rotating multi-rotor UAV) </strong>
 
 <figure>
 	<img src="/audios/dist_5/timit_95-100.png" alt="">
-	<figcaption>direction of arrive at 80 degree</figcaption>
-</figure>
-
-<strong stype="font-size: 1.17em;"> 2. SNR -27.14 (10m between sound source and shifting(moving) multi-rotor UAV) </strong>
-
-<figure>
-	<img src="/audios/dist_10/timit_344-80.png" alt="">
 	<figcaption>direction of arrive at 100 degree</figcaption>
 </figure>
 
-<strong stype="font-size: 1.17em;"> 3. SNR -35.93 (15m between sound source and shifting(moving) multi-rotor UAV) </strong>
+<strong stype="font-size: 1.17em;"> 2. SNR -25.05 (5m between sound source and hovering multi-rotor UAV) </strong>
+
+<figure>
+	<img src="/audios/dist_5/timit_268-160.png" alt="">
+	<figcaption>direction of arrive at 160 degree</figcaption>
+</figure>
+
+<strong stype="font-size: 1.17em;"> 3. SNR -27.14 (10m between sound source and shifting(moving) multi-rotor UAV) </strong>
+
+<figure>
+	<img src="/audios/dist_10/timit_344-80.png" alt="">
+	<figcaption>direction of arrive at 80 degree</figcaption>
+</figure>
+
+<strong stype="font-size: 1.17em;"> 4. SNR -35.93 (15m between sound source and shifting(moving) multi-rotor UAV) </strong>
 
 <figure>
 	<img src="/audios/dist_15/timit_591-20.png" alt="">
