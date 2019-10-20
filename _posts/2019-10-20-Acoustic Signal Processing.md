@@ -140,3 +140,10 @@ image:
 	<img src="/audios/dist_10/timit_344-80.png" alt="">
 	<figcaption>direction of arrive at 100 degree</figcaption>
 </figure>
+
+<strong stype="font-size: 1.17em;"> 3. SNR -35.93 (15m between sound source and shifting(moving) multi-rotor UAV) </strong>
+
+<figure>
+	<img src="/audios/dist_15/timit_591-20.png" alt="">
+	<figcaption>direction of arrive at 20 degree</figcaption>
+</figure>
