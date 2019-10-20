@@ -125,7 +125,7 @@ image:
 </audio>
 </div>
 
-## Localization $ Detection results
+## Localization & Detection results
 
 + noisy Log Magnitude Spectra
 + clean Log Magnitude Spectra
