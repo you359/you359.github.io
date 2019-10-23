@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Acoustic Signal Processing (Source Enhancement, Localization, Detection) in Low SNR environments
+title: Acoustic Signal Processing (Source Enhancement, Localization, Detection) in Low SNR Environments
 description: "results of my research"
 modified: 2019-10-20
 tags: [Technical Guide]
