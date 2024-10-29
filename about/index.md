@@ -11,10 +11,8 @@ modified: 2018-03-06
 
 ## About Me:
 
-* PhD student
-* Belonging to the [AI&CT Lab](http://218.150.181.235/) in [KoreaTech](https://www.koreatech.ac.kr/) university
-* Machine Learning / Deep Learning Researcher
-* Web Programmer(both frontend and backend)
+* Professor
+* Belonging to the [Sehan](https://www.sehan.ac.kr/) university
 * Interest in
     + Machine Learning / Deep Learning
     + Evolutionary Algorithm
@@ -25,8 +23,6 @@ modified: 2018-03-06
     + TRIZ (Theory of solving inventive problem)
     + Financial Technology & Analysis using ML (Stock, ..)
     + Enjoy the Tennis
-* [AI&CT Lab Repository](https://github.com/AInCT) is available
-
 *****
 
 ## Machine Learning / Deep Learning:
